@@ -15,40 +15,40 @@ export default function Paymant() {
       </div>
 
       <div className="flex p-2 items-start flex-col gap-1 bg-bgdark w-[80%] max-w-[400px] rounded-md">
-        <p className="flex justify-center w-full gap-2 text-secondarypink font-bold text-2xl">
+        <p className="flex justify-center w-full gap-2 text-primarypink font-bold text-2xl">
           De R$ <s>89,97</s> por R$ 19,97
         </p>
-        <p className="flex justify-center w-full text-secondarypink font-bold text-2xl pb-4">
+        <p className="flex justify-center w-full text-primarypink font-bold text-2xl pb-4">
           ou até 4x de R$ 5,37
         </p>
         <p className=" flex gap-2 font-bold text-2xl border-b-[1px] w-full border-zinc-800">
-          <Check className="text-secondarypink" size={36} /> Acesso vitalício ao
+          <Check className="text-primarypink" size={36} /> Acesso vitalício ao
           curso
         </p>
 
         <p className=" flex gap-2 border-b-[1px] w-full border-zinc-800 font-bold text-2xl">
-          <Check className="text-secondarypink flex-2" size={36} />{' '}
+          <Check className="text-primarypink flex-2" size={36} />{' '}
           <span className="flex-1">Bônus liberado após o 7° dia</span>
         </p>
 
         <p className="flex gap-2 border-b-[1px] w-full border-zinc-800 font-bold text-2xl">
-          <Check className="text-secondarypink flex-2" size={36} />{' '}
+          <Check className="text-primarypink flex-2" size={36} />{' '}
           <span className="flex-1">Suporte para dúvidas</span>
         </p>
 
         <p className="flex gap-2 font-bold text-2xl border-b-[1px] w-full border-zinc-800">
-          <Check className="text-secondarypink flex-2" size={36} />{' '}
+          <Check className="text-primarypink flex-2" size={36} />{' '}
           <span className="flex-1">Compra segura</span>
         </p>
 
         <p className="flex gap-2 font-bold text-2xl border-b-[1px] w-full border-zinc-800">
-          <Check className="text-secondarypink flex-2" size={36} />{' '}
+          <Check className="text-primarypink flex-2" size={36} />{' '}
           <span className="flex-1">Acesso pela Kiwify</span>
         </p>
 
         <p className="flex gap-2 font-bold text-2xl">
           {' '}
-          <Check className="text-secondarypink flex-2" size={36} />{' '}
+          <Check className="text-primarypink flex-2" size={36} />{' '}
           <span className="flex-1">com garantia de 7 dias</span>
         </p>
 

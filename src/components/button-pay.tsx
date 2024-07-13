@@ -9,7 +9,7 @@ export default function ButtonPay({ name }: ButtonPayProps) {
     <Link
       href={'https://pay.kiwify.com.br/cyryVKs'}
       target="blank"
-      className="cursor-pointer self-center bg-secondarypink p-2 px-4 rounded-md font-bold hover:bg-primarypink"
+      className="cursor-pointer self-center text-black bg-primarypink p-2 px-4 rounded-md font-bold hover:bg-primarypink/60"
     >
       {name}
     </Link>
