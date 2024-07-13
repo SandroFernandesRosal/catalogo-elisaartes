@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import topo from '../../public/foto-perfil.png'
+import perfil from '../../public/foto-perfil.png'
 import BackgroundPink from './background-pink'
 import BackgroundBlue from './background-blue'
 import ButtonPay from './button-pay'
@@ -20,7 +20,7 @@ export default function Highlight() {
       </div>
       <div className="bg-[url(../../public/moldura.png)] z-20 bg-cover">
         <Image
-          src={topo}
+          src={perfil}
           alt=""
           width={400}
           height={400}
