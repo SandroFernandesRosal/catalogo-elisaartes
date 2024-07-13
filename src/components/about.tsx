@@ -1,5 +1,4 @@
 import { Check } from 'lucide-react'
-import Link from 'next/link'
 
 export default function About() {
   return (
@@ -8,7 +7,7 @@ export default function About() {
         O que você vai aprender?
       </h1>
       <div className="flex">
-        <span className="border-b-4 w-24  border-secondarypink  text-3xl mb-5"></span>
+        <span className="border-b-4 w-24  border-primarypink  text-3xl mb-5"></span>
         <span className="border-b-4 w-24  border-primaryblue  text-3xl mb-5"></span>
       </div>
 
@@ -18,32 +17,32 @@ export default function About() {
             Módulo 1
           </h1>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />A importancia dos
-            stories
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">A importancia dos stories</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Métricas dos stories
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Métricas dos stories</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Criando storie
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Criando storie</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Alerta
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Alerta</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Dicas para gravar stories
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Dicas para gravar stories</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Storie em texto
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Storie em texto</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Frequência
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Frequência</span>
           </span>
         </li>
 
@@ -52,35 +51,38 @@ export default function About() {
             Módulo 2
           </h1>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} /> Caxinhas de
-            perguntas
+            <Check className="text-secondarypink flex-2" size={36} />{' '}
+            <span className="flex-1">Caxinhas de perguntas</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} /> Como usar testes
+            <Check className="text-secondarypink flex-2" size={36} />{' '}
+            <span className="flex-1">Como usar testes</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Como usar o report
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Como usar o report</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Estratégia do presente
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Estratégia do presente</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Conteúdo por camada
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Conteúdo por camada</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Como usar depoimentos para vender mais{' '}
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">
+              Como usar depoimentos para vender mais
+            </span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Novela nos stories
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Novela nos stories</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />O que postar nos
-            stories
+            <Check className="text-secondarypink flex-2" size={36} />O que
+            <span className="flex-1">postar nos stories</span>
           </span>
         </li>
 
@@ -89,12 +91,12 @@ export default function About() {
             Bônus 1
           </h1>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Aula Bônus
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Aula Bônus</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Ebook 30 ideias para stories
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Ebook 30 ideias para stories</span>
           </span>
         </li>
 
@@ -103,27 +105,19 @@ export default function About() {
             Bônus 2
           </h1>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            50 desafios para stories
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">50 desafios para stories</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Ebook 100 ideias para o feed
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Ebook 100 ideias para o feed</span>
           </span>
           <span className="flex gap-2">
-            <Check className="text-secondarypink" size={36} />
-            Ebook 100 ideias de reels
+            <Check className="text-secondarypink flex-2" size={36} />
+            <span className="flex-1">Ebook 100 ideias de reels</span>
           </span>
         </li>
       </ul>
-
-      <Link
-        href={'https://pay.kiwify.com.br/cyryVKs'}
-        target="blank"
-        className="cursor-pointer self-center bg-secondarypink p-2 px-4 rounded-md font-bold hover:bg-primarypink mt-5"
-      >
-        Quero me inscrever agora
-      </Link>
     </section>
   )
 }

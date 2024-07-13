@@ -8,7 +8,7 @@ export default function Services() {
         Tenha um instagram de sucesso com...
       </h1>
       <div className="flex">
-        <span className="border-b-4 w-24  border-secondarypink  text-3xl mb-5"></span>
+        <span className="border-b-4 w-24  border-primarypink  text-3xl mb-5"></span>
         <span className="border-b-4 w-24  border-primaryblue  text-3xl mb-5"></span>
       </div>
 

@@ -2,11 +2,11 @@ import Image from 'next/image'
 import topo from '../../public/foto-perfil.png'
 import BackgroundPink from './background-pink'
 import BackgroundBlue from './background-blue'
-import Link from 'next/link'
+import ButtonPay from './button-pay'
 
 export default function Highlight() {
   return (
-    <section className="flex bg-bgdark flex-wrap items-center w-full justify-center  md:justify-evenly py-10 gap-4 ">
+    <section className="flex bg-bgdark flex-wrap items-center w-full justify-center  md:justify-evenly py-10  gap-4 bg-[url(../../public/topo2.png)] bg-contain bg-left">
       <BackgroundPink />
       <BackgroundBlue />
       <div className="z-20  gap-2 flex flex-col ">
@@ -14,15 +14,9 @@ export default function Highlight() {
           Instagram para empreendedoras
         </h1>
         <span className="flex justify-center text-xl text-center">
-          Turbine seu instagram, aumente suas vendas e seguidores
+          Turbine seu instagram e aumente suas vendas
         </span>
-        <Link
-          href={'https://pay.kiwify.com.br/cyryVKs'}
-          target="blank"
-          className="cursor-pointer self-center bg-secondarypink p-2 px-4 rounded-md font-bold hover:bg-primarypink"
-        >
-          Quero me inscrever agora
-        </Link>
+        <ButtonPay name="Quero me inscrever agora" />
       </div>
       <div className="bg-[url(../../public/moldura.png)] z-20 bg-cover">
         <Image
