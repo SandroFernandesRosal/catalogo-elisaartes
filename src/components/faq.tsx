@@ -36,7 +36,7 @@ export default function Faq() {
   ]
 
   return (
-    <section className="z-10 px-5   flex flex-col items-center   py-5" id="faq">
+    <section className="z-10  flex flex-col items-center   py-5" id="faq">
       <h1 className="text-2xl md:text-4xl text-center font-bold">
         Perguntas frequentes
       </h1>
@@ -45,7 +45,7 @@ export default function Faq() {
         <span className="border-b-4 w-24  border-primaryblue  text-3xl mb-5"></span>
       </div>
 
-      <ul className="w-[90%] px-5 max-w-[500px] flex flex-col gap-3">
+      <ul className="w-[80%] px-2 max-w-[400px] flex flex-col gap-3">
         {faqItems.map((item, index) => (
           <li key={index} onClick={() => handleOpen(index)} className="faq">
             <h1 className="bg-bgdarksecondary  h-20 items-center text-secondarypink rounded-md p-5 font-bold cursor-pointer flex justify-between">

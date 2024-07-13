@@ -5,7 +5,7 @@ import ButtonPay from './button-pay'
 
 export default function Paymant() {
   return (
-    <section className="flex flex-col justify-center gap-4 bg-bgdarksecondary py-5 items-center">
+    <section className="flex flex-col justify-center gap-4 bg-bgdarksecondary py-5 items-center px-2">
       <h1 className="text-2xl md:text-4xl text-center font-bold">
         Conquiste sua independência financeira
       </h1>
@@ -15,7 +15,7 @@ export default function Paymant() {
       </div>
 
       <div className="flex p-2 items-start flex-col gap-1 bg-bgdark w-[80%] max-w-[400px] rounded-md">
-        <p className="flex justify-center w-full text-secondarypink font-bold text-2xl">
+        <p className="flex justify-center w-full gap-2 text-secondarypink font-bold text-2xl">
           De R$ <s>89,97</s> por R$ 19,97
         </p>
         <p className="flex justify-center w-full text-secondarypink font-bold text-2xl pb-4">

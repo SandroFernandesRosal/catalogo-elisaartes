@@ -11,8 +11,8 @@ export default function About() {
         <span className="border-b-4 w-24  border-primaryblue  text-3xl mb-5"></span>
       </div>
 
-      <ul className="flex flex-wrap gap-4 px-2 justify-center text-xl md:text-2xl">
-        <li className="bg-bgdarksecondary w-[80%] max-w-[400px] rounded-md flex flex-col ">
+      <ul className="flex flex-wrap gap-4 px-2 justify-center text-xl md:text-2xl w-full">
+        <li className="bg-bgdarksecondary w-[80%] max-w-[400px] h-[360px] rounded-md flex flex-col p-2">
           <h1 className="flex justify-center text-3xl font-bold text-secondarypink">
             Módulo 1
           </h1>
@@ -46,13 +46,13 @@ export default function About() {
           </span>
         </li>
 
-        <li className="bg-bgdarksecondary w-[80%] max-w-[400px] rounded-md  flex flex-col ">
+        <li className="bg-bgdarksecondary w-[80%] max-w-[400px] h-[360px] rounded-md  flex flex-col p-2">
           <h1 className="flex justify-center text-3xl font-bold text-secondarypink">
             Módulo 2
           </h1>
           <span className="flex gap-2">
             <Check className="text-secondarypink flex-2" size={36} />{' '}
-            <span className="flex-1">Caxinhas de perguntas</span>
+            <span className="flex-1">Caixinhas de perguntas</span>
           </span>
           <span className="flex gap-2">
             <Check className="text-secondarypink flex-2" size={36} />{' '}
@@ -86,7 +86,7 @@ export default function About() {
           </span>
         </li>
 
-        <li className="bg-bgdarksecondary w-[80%] max-w-[400px] rounded-md flex flex-col ">
+        <li className="bg-bgdarksecondary w-[80%] max-w-[400px] h-[360px] rounded-md flex flex-col p-2 ">
           <h1 className="flex justify-center text-3xl font-bold text-secondarypink">
             Bônus 1
           </h1>
@@ -98,9 +98,7 @@ export default function About() {
             <Check className="text-secondarypink flex-2" size={36} />
             <span className="flex-1">Ebook 30 ideias para stories</span>
           </span>
-        </li>
 
-        <li className="bg-bgdarksecondary w-[80%] max-w-[400px] rounded-md">
           <h1 className="flex justify-center text-3xl font-bold text-secondarypink">
             Bônus 2
           </h1>
