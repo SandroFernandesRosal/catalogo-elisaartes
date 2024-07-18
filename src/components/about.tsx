@@ -86,34 +86,37 @@ export default function About() {
           </span>
         </li>
 
-        <li className="bg-bgdarksecondary w-[80%] max-w-[400px] h-[360px] rounded-md flex flex-col p-2 ">
-          <h1 className="flex justify-center text-3xl font-bold text-primarypink">
-            Bônus 1
-          </h1>
-          <span className="flex gap-2">
-            <Check className="text-primarypink flex-2" size={36} />
-            <span className="flex-1">Aula Bônus</span>
-          </span>
-          <span className="flex gap-2">
-            <Check className="text-primarypink flex-2" size={36} />
-            <span className="flex-1">Ebook 30 ideias para stories</span>
-          </span>
-
-          <h1 className="flex justify-center text-3xl font-bold text-primarypink">
-            Bônus 2
-          </h1>
-          <span className="flex gap-2">
-            <Check className="text-primarypink flex-2" size={36} />
-            <span className="flex-1">50 desafios para stories</span>
-          </span>
-          <span className="flex gap-2">
-            <Check className="text-primarypink flex-2" size={36} />
-            <span className="flex-1">Ebook 100 ideias para o feed</span>
-          </span>
-          <span className="flex gap-2">
-            <Check className="text-primarypink flex-2" size={36} />
-            <span className="flex-1">Ebook 100 ideias de reels</span>
-          </span>
+        <li className="bg-bgdarksecondary w-[80%] max-w-[400px] h-[360px] rounded-md flex flex-col p-2 justify-between ">
+          <div>
+            <h1 className="flex justify-center text-3xl font-bold text-primarypink">
+              Bônus 1
+            </h1>
+            <span className="flex gap-2">
+              <Check className="text-primarypink flex-2" size={36} />
+              <span className="flex-1">Aula Bônus</span>
+            </span>
+            <span className="flex gap-2">
+              <Check className="text-primarypink flex-2" size={36} />
+              <span className="flex-1">Ebook 30 ideias para stories</span>
+            </span>
+          </div>
+          <div>
+            <h1 className="flex justify-center text-3xl font-bold text-primarypink">
+              Bônus 2
+            </h1>
+            <span className="flex gap-2">
+              <Check className="text-primarypink flex-2" size={36} />
+              <span className="flex-1">50 desafios para stories</span>
+            </span>
+            <span className="flex gap-2">
+              <Check className="text-primarypink flex-2" size={36} />
+              <span className="flex-1">Ebook 100 ideias para o feed</span>
+            </span>
+            <span className="flex gap-2">
+              <Check className="text-primarypink flex-2" size={36} />
+              <span className="flex-1">Ebook 100 ideias de reels</span>
+            </span>
+          </div>
         </li>
       </ul>
     </section>
