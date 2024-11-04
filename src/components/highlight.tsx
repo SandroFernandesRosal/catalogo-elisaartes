@@ -1,24 +1,21 @@
 import Image from 'next/image'
-import perfil from '../../public/foto-perfil.png'
-import BackgroundPink from './background-pink'
-import BackgroundBlue from './background-blue'
+import perfil from '../../public/logo.png'
+
 import ButtonPay from './button-pay'
 
 export default function Highlight() {
   return (
-    <section className="flex bg-bgdark flex-wrap items-center w-full justify-center  md:justify-evenly py-10  gap-4 bg-[url(../../public/topo2.png)] bg-contain bg-left">
-      <BackgroundPink />
-      <BackgroundBlue />
+    <section className="flex bg-bgdark flex-wrap items-center w-full justify-center  md:justify-evenly py-10  gap-4 bg-[url(/bgbottom.png)] bg-bottom bg-repeat-x md:bg-contain">
       <div className="z-20  gap-2 flex flex-col ">
-        <h1 className="flex justify-center text-5xl md:text-5xl lg:text-6xl text-white text-center w-[100%] max-w-[500px] font-Pacifico">
-          Instagram para empreendedoras
+        <h1 className="flex font-Bad font-bold justify-center text-5xl md:text-5xl lg:text-6xl text-textprimary text-center w-[100%] max-w-[500px] ">
+          Elisa Artes Digitais
         </h1>
         <span className="flex justify-center text-xl text-center">
-          Turbine seu instagram e aumente suas vendas
+          Surpreenda os seus convidados
         </span>
-        <ButtonPay name="Quero me inscrever agora" />
+        <ButtonPay name="Quero fazer um pedido" />
       </div>
-      <div className="bg-[url(../../public/moldura.png)] z-20 bg-cover">
+      <div className="z-20 mb-5">
         <Image
           src={perfil}
           alt=""

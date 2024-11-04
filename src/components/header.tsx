@@ -9,10 +9,8 @@ export default function Header() {
     if (typeof window !== 'undefined') {
       const currentScrollY = window.scrollY
       if (currentScrollY === 0) {
-        // No topo
         setShowHeader(false)
       } else {
-        // Rolagem para baixo
         setShowHeader(true)
       }
     }
@@ -33,7 +31,7 @@ export default function Header() {
         showHeader ? 'transform translate-y-0' : 'transform -translate-y-full'
       }`}
     >
-      <ButtonPay name="Quero me inscrever agora" />
+      <ButtonPay name="Quero fazer um pedido" />
     </header>
   )
 }
