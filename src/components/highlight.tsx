@@ -11,8 +11,9 @@ export default function Highlight() {
           Elisa Artes Digitais
         </h1>
         <span className="flex justify-center text-xl text-center">
-          Surpreenda os seus convidados
+          Surpreenda seus convidados
         </span>
+
         <ButtonPay name="Quero fazer um pedido" />
       </div>
       <div className="z-20 mb-5">

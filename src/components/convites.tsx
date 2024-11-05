@@ -4,13 +4,13 @@ import Image from 'next/image'
 
 export default function Convites() {
   return (
-    <section className="py-5 bg-bgdark flex flex-wrap justify-center items-center gap-4">
+    <section className="bg-bgdark flex flex-wrap justify-center items-center  ">
       {convitesData.map((convite: ConvitesProps) => (
         <div
           key={convite.id}
-          className="flex flex-col justify-center items-center bg-white gap-4 w-[100%] pb-12 pt-4"
+          className="flex flex-col justify-center items-center bg-white gap-4 w-[100%]  pt-4 bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain"
         >
-          <h1 className="text-3xl">{convite.title}</h1>
+          <h1 className="pt-10 text-3xl">{convite.title}</h1>
           <div className="flex">
             <span className="border-b-4 w-24  border-primarypink  text-3xl mb-5"></span>
             <span className="border-b-4 w-24  border-textdark  text-3xl mb-5"></span>
@@ -19,7 +19,7 @@ export default function Convites() {
             className={`flex  ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap' : 'flex-nowrap'}`}
           >
             <div
-              className={`flex  justify-center  w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[390px] md:w-[80%] lg:max-w-[800px]  mb-5 md:mb-0'}`}
+              className={`flex  justify-center  w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[400px] md:w-[80%] lg:max-w-[800px]  mb-5 md:mb-0'}`}
             >
               {convite.img &&
                 convite.img.map((imgUrl: string) => (
@@ -58,7 +58,7 @@ export default function Convites() {
             >
               {convite.subtitles.map((sub: string, i: number) => (
                 <li
-                  className="font-bold w-[90%] text-black  md:w-[50%]  md:-w-[100]"
+                  className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]"
                   key={i}
                 >
                   * {sub}
@@ -104,7 +104,7 @@ export default function Convites() {
             </ul>
           </div>
 
-          <div className="flex md:hidden">
+          <div className="flex md:hidden ">
             <div className="relative flex  items-center justify-center">
               <Image src="/pronto.png" alt="" width={150} height={100} />
               <span className="absolute bottom-9 text-xl ml-2 font-bold">
@@ -118,6 +118,7 @@ export default function Convites() {
               </span>
             </div>
           </div>
+          <div className=" w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-contain"></div>
         </div>
       ))}
     </section>

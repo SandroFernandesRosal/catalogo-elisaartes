@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Filtro() {
   return (
-    <section className="py-5 bg-white flex flex-col items-center gap-4">
+    <section className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-14 bg-white flex flex-col items-center gap-4">
       <h1 className="text-2xl md:text-4xl text-center font-bold">
         Filtro para instagram
       </h1>
@@ -11,22 +11,63 @@ export default function Filtro() {
         <span className="border-b-4 w-24  border-textdark  text-3xl mb-5"></span>
       </div>
 
-      <div className="bg-white w-full flex  justify-evenly md:justify-center md:gap-10">
-        <Image
-          src={'/mockupfiltro.png'}
-          width={309}
-          height={510}
-          alt=""
-          className="w-[40%] max-w-[309px]"
-        />
-        <Image
-          src={'/qrcode.png'}
-          width={309}
-          height={510}
-          alt=""
-          className="w-[40%] max-w-[309px]"
-        />
+      <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse">
+        {' '}
+        <div className="bg-white flex  justify-evenly md:justify-center md:gap-10 w-[400px] md:w-[50%] items-center">
+          <Image
+            src={'/mockupfiltro.png'}
+            width={309}
+            height={510}
+            alt=""
+            className="w-[40%] max-w-[309px]"
+          />
+          <Image
+            src={'/qrcode.png'}
+            width={309}
+            height={510}
+            alt=""
+            className="w-[40%] max-w-[309px] border-[1px] border-zinc-300"
+          />
+        </div>
+        <ul className="w-[50%] flex  items-center  flex-col justify-around">
+          <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
+            * Filtro moldura personalizado personalizado no tema da festa + card
+            QR code
+          </li>
+          <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
+            * Desconto para quem fechar junto com o convite
+          </li>
+
+          <p className="my-2 text-black italic w-[90%]  md:w-[50%]">
+            Imagem ilustrativa. Criamos qualquer tema.
+          </p>
+          <div className="flex gap-3 my-1 mx-2">
+            <button
+              type="button"
+              className="md:p-1 w-[50%] max-w-[120px]  px-1 bg-textdark text-white rounded-lg"
+            >
+              Ver modelo
+            </button>
+            <button
+              type="button"
+              className="md:p-1 w-[50%] max-w-[120px]   px-2 bg-textdark text-white rounded-lg"
+            >
+              Fazer pedido
+            </button>
+          </div>
+
+          <div className="flex">
+            <div className="relative flex flex-col items-center justify-center">
+              <Image src="/personalizado.png" alt="" width={150} height={100} />
+              <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+                R$ 35,00
+              </span>
+            </div>
+          </div>
+        </ul>
       </div>
+
+      <div className=" w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-contain"></div>
     </section>
   )
 }

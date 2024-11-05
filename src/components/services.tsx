@@ -1,12 +1,12 @@
 export default function Services() {
   return (
-    <section className="py-10 bg-white flex flex-col items-center gap-4">
+    <section className="pb-20 bg-white flex flex-col items-center gap-4 bg-[url(/bgtop.png)] bg-bottom bg-repeat-x md:bg-contain">
       <h1 className="text-2xl md:text-4xl text-center font-bold">
         Trabalhamos com modelos prontos e personalizados.
       </h1>
       <div className="flex">
         <span className="border-b-4 w-24  border-primarypink  text-3xl mb-5"></span>
-        <span className="border-b-4 w-24  border-text  text-3xl mb-5"></span>
+        <span className="border-b-4 w-24  border-textdark text-3xl mb-5"></span>
       </div>
 
       <ul className="flex flex-wrap gap-4 px-2 justify-center text-xl md:text-2xl">
