@@ -5,6 +5,8 @@ import Tradicional from '@/components/convites'
 import Faq from '@/components/faq'
 import Footer from '@/components/footer'
 import Filtro from '@/components/filtro'
+import Savethedate from '@/components/savethedate'
+import Lembrete from '@/components/lembrete'
 
 export default function Home() {
   return (
@@ -13,7 +15,8 @@ export default function Home() {
       <Services />
       <Tradicional />
       <Filtro />
-
+      <Savethedate />
+      <Lembrete />
       <Faq />
       <Footer />
     </main>

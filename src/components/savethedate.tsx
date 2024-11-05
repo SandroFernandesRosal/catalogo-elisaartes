@@ -1,42 +1,38 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Filtro() {
+export default function Savethedate() {
   return (
     <section className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-14 bg-white flex flex-col items-center gap-4">
-      <h1 className="text-2xl md:text-3xl text-center ">
-        Filtro para instagram
-      </h1>
+      <h1 className="text-2xl md:text-3xl text-center">Save the date</h1>
       <div className="flex">
-        <span className="border-b-4 w-24  border-primarypink  text-3xl mb-5"></span>
-        <span className="border-b-4 w-24  border-textdark  text-3xl mb-5"></span>
+        <span className="border-b-4 w-16  border-primarypink  text-3xl mb-5"></span>
+        <span className="border-b-4 w-16  border-textdark  text-3xl mb-5"></span>
       </div>
 
-      <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse">
+      <div className="flex flex-wrap justify-center md:justify-evenly w-full ">
         {' '}
-        <div className="bg-white flex  justify-evenly md:justify-center md:gap-10 w-[400px] md:w-[50%] items-center mb-5">
+        <div className="bg-white flex  justify-center mb-5 w-[60%] md:w-[50%]">
           <Image
-            src={'/mockupfiltro.png'}
-            width={309}
-            height={510}
+            src={'/savethedate.png'}
+            width={500}
+            height={500}
+            quality={100}
             alt=""
-            className="w-[40%] max-w-[309px]"
-          />
-          <Image
-            src={'/qrcode.png'}
-            width={309}
-            height={510}
-            alt=""
-            className="w-[40%] max-w-[309px] border-[1px] border-zinc-300"
+            className="md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px] border-[1px] border-zinc-300"
           />
         </div>
-        <ul className="w-[50%] flex  items-center  flex-col justify-around">
+        <ul className=" w-[50%] gap-2   items-center flex flex-col justify-around">
           <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
-            * Filtro moldura personalizado personalizado no tema da festa + card
-            QR code
+            * É um aviso antecipado para que os convidados não marquem outros
+            compromissos para aquele dia.
           </li>
           <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
-            * Desconto para quem fechar junto com o convite
+            * É enviado antes do convite
+          </li>
+
+          <li className="font-bold w-[90%] text-sm text-textlight  md:w-[50%]  md:-w-[100]">
+            Obs: Desconto para quem fechar junto com o convite
           </li>
 
           <p className="my-2 text-black italic w-[90%]  md:w-[50%]">

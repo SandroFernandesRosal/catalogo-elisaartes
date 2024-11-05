@@ -1,6 +1,7 @@
 import { ConvitesProps } from '@/data/types/convites'
 import { convitesData } from '@/data/convitesData'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Convites() {
   return (
@@ -19,7 +20,7 @@ export default function Convites() {
             className={`flex  ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap' : 'flex-nowrap'}`}
           >
             <div
-              className={`flex  justify-center  w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[400px] md:w-[80%] lg:max-w-[800px]  mb-5 md:mb-0'}`}
+              className={`flex  justify-center w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[400px] md:w-[80%] lg:max-w-[800px]  mb-5 md:mb-0'}`}
             >
               {convite.img &&
                 convite.img.map((imgUrl: string) => (
@@ -30,6 +31,7 @@ export default function Convites() {
                     alt={convite.title}
                     width={309}
                     height={550}
+                    quality={100}
                   />
                 ))}
 
@@ -68,18 +70,18 @@ export default function Convites() {
                 {convite.info}
               </p>
               <div className="flex gap-3 my-1 mx-2">
-                <button
-                  type="button"
-                  className="md:p-1 w-[50%] max-w-[120px]  px-1 bg-textdark text-white rounded-lg"
+                <Link
+                  href={''}
+                  className="p-1  flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
                 >
                   Ver modelo
-                </button>
-                <button
-                  type="button"
-                  className="md:p-1 w-[50%] max-w-[120px]   px-2 bg-textdark text-white rounded-lg"
+                </Link>
+                <Link
+                  href={''}
+                  className=":p-1  flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
                 >
                   Fazer pedido
-                </button>
+                </Link>
               </div>
 
               <div className="md:flex hidden">

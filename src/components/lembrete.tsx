@@ -1,42 +1,34 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function Filtro() {
+export default function Lembrete() {
   return (
     <section className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-14 bg-white flex flex-col items-center gap-4">
-      <h1 className="text-2xl md:text-3xl text-center ">
-        Filtro para instagram
-      </h1>
+      <h1 className="text-2xl md:text-3xl text-center">Lembrete</h1>
       <div className="flex">
-        <span className="border-b-4 w-24  border-primarypink  text-3xl mb-5"></span>
-        <span className="border-b-4 w-24  border-textdark  text-3xl mb-5"></span>
+        <span className="border-b-4 w-12  border-primarypink  text-3xl mb-5"></span>
+        <span className="border-b-4 w-12 border-textdark  text-3xl mb-5"></span>
       </div>
 
-      <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse">
+      <div className="flex flex-wrap justify-center md:justify-evenly w-full ">
         {' '}
-        <div className="bg-white flex  justify-evenly md:justify-center md:gap-10 w-[400px] md:w-[50%] items-center mb-5">
+        <div className="bg-white flex  justify-center mb-5 w-[60%] md:w-[50%]">
           <Image
-            src={'/mockupfiltro.png'}
+            src={'/lembrete.png'}
             width={309}
             height={510}
+            quality={100}
             alt=""
-            className="w-[40%] max-w-[309px]"
-          />
-          <Image
-            src={'/qrcode.png'}
-            width={309}
-            height={510}
-            alt=""
-            className="w-[40%] max-w-[309px] border-[1px] border-zinc-300"
+            className="md:w-[309px] md:h-[510px]  border-[1px] border-zinc-300"
           />
         </div>
-        <ul className="w-[50%] flex  items-center  flex-col justify-around">
+        <ul className=" w-[50%]   items-center flex flex-col justify-around">
           <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
-            * Filtro moldura personalizado personalizado no tema da festa + card
-            QR code
+            * É enviado alguns dias antes da festa para lembrar o convidado
           </li>
-          <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
-            * Desconto para quem fechar junto com o convite
+
+          <li className="font-bold w-[90%] text-sm text-textlight  md:w-[50%]  md:-w-[100]">
+            Obs: Desconto para quem fechar junto com o convite
           </li>
 
           <p className="my-2 text-black italic w-[90%]  md:w-[50%]">
@@ -61,7 +53,7 @@ export default function Filtro() {
             <div className="relative flex flex-col items-center justify-center">
               <Image src="/personalizado.png" alt="" width={150} height={100} />
               <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
-                R$ 35,00
+                R$ 20,00
               </span>
             </div>
           </div>
