@@ -59,14 +59,14 @@ export default function Convites() {
             </div>
 
             <ul
-              className={` ${convite.title === 'Convite interativo animado' ? 'w-[50%]' : 'w-[50%]'} w-[50%]  items-center flex flex-col justify-evenly `}
+              className={` ${convite.title === 'Convite interativo animado' ? 'w-[50%] gap-2' : 'w-[50%]'} w-[50%]  items-center flex flex-col justify-around `}
             >
               {convite.subtitles.map((sub: string, i: number) => (
                 <li
-                  className="gap-2 w-[90%] text-textlight  md:w-[50%]  "
+                  className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%] bg-bgdark rounded-lg px-[2px]"
                   key={i}
                 >
-                  <IoIosHeart className="text-textdark text-[15px]" />
+                  <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
                   <span>{sub}</span>
                 </li>
               ))}

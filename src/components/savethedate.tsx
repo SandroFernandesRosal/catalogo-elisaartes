@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { IoIosHeart } from 'react-icons/io'
 
 export default function Savethedate() {
   return (
@@ -24,17 +25,22 @@ export default function Savethedate() {
             className="md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px] border-[1px] border-zinc-300"
           />
         </div>
-        <ul className=" w-[50%] gap-2   items-center flex flex-col justify-around">
-          <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
-            * É um aviso antecipado para que os convidados não marquem outros
-            compromissos para aquele dia.
+        <ul className="w-[50%] gap-2 items-center flex flex-col justify-around">
+          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%]  bg-bgdark rounded-lg px-[2px]">
+            <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
+            <span>
+              É um aviso antecipado para que os convidados não marquem outros
+              compromissos para aquele dia.
+            </span>
           </li>
-          <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
-            * É enviado antes do convite
+          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%]  md:-w-[100] bg-bgdark rounded-lg px-[2px]">
+            <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
+            <span>É enviado antes do convite</span>
           </li>
 
-          <li className="font-bold w-[90%] text-sm text-textlight  md:w-[50%]  md:-w-[100]">
-            Obs: Desconto para quem fechar junto com o convite
+          <li className="flex items-center gap-2 w-[90%] text-sm text-textlight  md:w-[50%]  md:-w-[100]bg-bgdark  bg-bgdark rounded-lg px-[2px]">
+            <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
+            <span>Obs: Desconto para quem fechar junto com o convite</span>
           </li>
 
           <p className="my-2 text-black italic w-[90%]  md:w-[50%]">

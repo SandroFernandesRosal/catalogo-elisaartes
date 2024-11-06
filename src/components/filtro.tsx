@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { IoIosHeart } from 'react-icons/io'
 
 export default function Filtro() {
   return (
@@ -30,13 +31,18 @@ export default function Filtro() {
             className="w-[40%] max-w-[309px] border-[1px] border-zinc-300"
           />
         </div>
-        <ul className="w-[50%] flex  items-center  flex-col justify-around">
-          <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
-            * Filtro moldura personalizado personalizado no tema da festa + card
-            QR code
+        <ul className="w-[50%] flex gap-2  items-center  flex-col justify-evenly">
+          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%] bg-bgdark rounded-lg px-[2px]">
+            <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
+            <span>
+              Filtro moldura personalizado personalizado no tema da festa + card
+              QR code
+            </span>
           </li>
-          <li className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]">
-            * Desconto para quem fechar junto com o convite
+
+          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%] bg-bgdark rounded-lg px-[2px]">
+            <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
+            <span>Desconto para quem fechar junto com o convite</span>
           </li>
 
           <p className="my-2 text-black italic w-[90%]  md:w-[50%]">
