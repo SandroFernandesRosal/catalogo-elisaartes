@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Savethedate() {
   return (
     <section className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-14 bg-white flex flex-col items-center gap-4">
-      <h1 className="text-3xl text-center font-Bad font-extrabold">
+      <h1 className="text-5xl text-center font-Bad font-extrabold">
         Save the date
       </h1>
       <div className="flex">

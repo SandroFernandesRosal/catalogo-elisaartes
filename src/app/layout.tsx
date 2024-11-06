@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import {
   Roboto_Flex as Roboto,
   Lilita_One as Permanent,
-  Bad_Script as Bad,
+  Great_Vibes as Bad,
 } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/header'

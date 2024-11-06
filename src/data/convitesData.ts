@@ -6,7 +6,7 @@ export const convitesData: ConvitesProps[] = [
     title: 'Convite tradicional',
     subtitles: [
       'Enviado em PNG(imagem).',
-      'É possível ser adicionado foto da criança(com acréscimo de 3 reais.',
+      'Pode adicionar foto(com acréscimo de 3 reais.',
       'Pode ser impresso',
       'Sem música ou animação',
     ],
@@ -39,9 +39,10 @@ export const convitesData: ConvitesProps[] = [
     id: 3,
     title: 'Convite interativo 3 botões',
     subtitles: [
-      'Enviado em MP4.',
+      'Enviado em PDF.',
       'Pode adicionar foto(acréscimo de 3 reais).',
-      'Usamos clips, cenas ou aberturas do tema escolhido, retirados do YouTube.',
+      'Botões clicáveis de confirmação de presença e localização',
+      'Sugetão de presente',
     ],
     info: '',
     img: ['/interativo3.png'],
@@ -50,8 +51,26 @@ export const convitesData: ConvitesProps[] = [
     pricetwo: 'R$ 30,00',
     video: false,
   },
+
   {
     id: 4,
+    title: 'Convite infinito',
+    subtitles: [
+      'Enviado em PDF.',
+      'Pode adicionar foto(acréscimo de 3 reais).',
+      'Modelo de página longa',
+      'Sugestão de presente na própria página',
+      'Botões clicáveis de confirmação de presença e localização',
+    ],
+    info: '',
+    img: false,
+    button: '',
+    priceone: 'R$ 25,00 ',
+    pricetwo: 'R$ 30,00',
+    video: '/infinito.mp4',
+  },
+  {
+    id: 5,
     title: 'Convite animado gif',
     subtitles: [
       'Enviado em vídeo MP4.',
@@ -68,7 +87,7 @@ export const convitesData: ConvitesProps[] = [
     video: '/animadogif.mp4',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Convite animado história',
     subtitles: [
       'Enviado em vídeo MP4.',
@@ -83,7 +102,7 @@ export const convitesData: ConvitesProps[] = [
     video: '/animadohistoria.mp4',
   },
   {
-    id: 6,
+    id: 7,
     title: 'Convite interativo animado',
     subtitles: [
       'União do convite interativo com convite animado.',

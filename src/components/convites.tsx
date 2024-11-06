@@ -2,6 +2,7 @@ import { ConvitesProps } from '@/data/types/convites'
 import { convitesData } from '@/data/convitesData'
 import Image from 'next/image'
 import Link from 'next/link'
+import { IoIosHeart } from 'react-icons/io'
 
 export default function Convites() {
   return (
@@ -11,7 +12,7 @@ export default function Convites() {
           key={convite.id}
           className="flex flex-col justify-center items-center bg-white gap-4 w-[100%]  pt-4 bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain"
         >
-          <h1 className="pt-10 text-3xl text-center font-Bad font-extrabold">
+          <h1 className="pt-10 text-5xl text-center font-Bad font-extrabold">
             {convite.title}
           </h1>
           <div className="flex">
@@ -19,7 +20,7 @@ export default function Convites() {
             <span className="border-b-4 w-24  border-textdark  text-3xl mb-5"></span>
           </div>
           <div
-            className={`flex  ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap' : 'flex-nowrap'}`}
+            className={`flex  ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite infinito' || convite.title === 'Convite animado história' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap' : 'flex-nowrap'}`}
           >
             <div
               className={`flex  justify-center w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[500px] md:w-[80%] lg:max-w-[800px]  mb-5'}`}
@@ -58,14 +59,15 @@ export default function Convites() {
             </div>
 
             <ul
-              className={` ${convite.title === 'Convite interativo animado' ? 'w-[50%]' : 'w-[50%]'} w-[50%]   items-center flex flex-col justify-around `}
+              className={` ${convite.title === 'Convite interativo animado' ? 'w-[50%]' : 'w-[50%]'} w-[50%]  items-center flex flex-col justify-evenly `}
             >
               {convite.subtitles.map((sub: string, i: number) => (
                 <li
-                  className="font-bold w-[90%] text-textlight  md:w-[50%]  md:-w-[100]"
+                  className="gap-2 w-[90%] text-textlight  md:w-[50%]  "
                   key={i}
                 >
-                  * {sub}
+                  <IoIosHeart className="text-textdark text-[15px]" />
+                  <span>{sub}</span>
                 </li>
               ))}
               <p className="my-2 text-black italic w-[90%]  md:w-[50%]">
