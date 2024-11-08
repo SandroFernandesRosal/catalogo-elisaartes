@@ -47,8 +47,8 @@ export const convitesData: ConvitesProps[] = [
     info: '',
     img: ['/interativo3.png'],
     button: '',
-    priceone: 'R$ 25,00 ',
-    pricetwo: 'R$ 30,00',
+    priceone: 'R$ 30,00 ',
+    pricetwo: 'R$ 40,00',
     video: false,
   },
 
@@ -65,8 +65,8 @@ export const convitesData: ConvitesProps[] = [
     info: '',
     img: false,
     button: '',
-    priceone: 'R$ 25,00 ',
-    pricetwo: 'R$ 30,00',
+    priceone: 'R$ 40,00 ',
+    pricetwo: 'R$ 50,00',
     video: '/infinito.mp4',
   },
   {
@@ -83,7 +83,7 @@ export const convitesData: ConvitesProps[] = [
     img: false,
     button: '',
     priceone: 'R$ 25,00 ',
-    pricetwo: 'R$ 30,00',
+    pricetwo: 'R$ 35,00',
     video: '/animadogif.mp4',
   },
   {
@@ -115,8 +115,8 @@ export const convitesData: ConvitesProps[] = [
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: ['/interativoanimado2.png', '/interativoanimado1.png'],
     button: '',
-    priceone: 'R$ 50,00 ',
-    pricetwo: 'R$ 60,00',
+    priceone: 'R$ 60,00 ',
+    pricetwo: 'R$ 70,00',
     video: '/animadohistoria.mp4',
   },
 ]
