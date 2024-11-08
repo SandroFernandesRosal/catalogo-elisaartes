@@ -25,8 +25,8 @@ const bad = Bad({
 })
 
 export const metadata: Metadata = {
-  title: 'Instagram para empreendedoras',
-  description: 'Página de vendas',
+  title: 'Elisa Artes Digitais - Catalogo',
+  description: 'Catálogo de artes',
 }
 
 export default function RootLayout({
