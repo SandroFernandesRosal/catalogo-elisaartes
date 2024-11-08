@@ -41,12 +41,12 @@ export default function Convites() {
             className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite interativo animado' || convite.title === 'Convite infinito' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap' : 'flex-nowrap'}`}
           >
             <div
-              className={`flex justify-center w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[50%] flex-wrap md:w-[100%] lg:max-w-[800px] mb-5'}`}
+              className={`flex justify-center w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[500px] flex-wrap md:w-[100%] lg:max-w-[800px] mb-5'}`}
             >
               {convite.img &&
                 convite.img.map((imgUrl: string) => (
                   <Image
-                    className={`${convite.title === 'Convite interativo animado' && 'w-[309px]'}`}
+                    className={`${convite.title === 'Convite interativo animado' && 'w-[50%] md:w-[33%]  max-w-[309px]'}`}
                     key={imgUrl}
                     src={imgUrl}
                     alt={convite.title}
@@ -57,7 +57,9 @@ export default function Convites() {
                 ))}
 
               {convite.video && (
-                <div className="relative w-[309px] h-[550px]">
+                <div
+                  className={`relative w-[100%]   max-w-[309px] ${convite.title === 'Convite interativo animado' && 'w-[50%] md:w-[33%]'}`}
+                >
                   <video
                     ref={(el) => {
                       videoRefs.current[convite.id] = el
@@ -92,7 +94,7 @@ export default function Convites() {
             </div>
 
             <ul
-              className={`${convite.title === 'Convite interativo animado' ? 'w-[50%] gap-2' : 'w-[50%]'} items-center flex flex-col justify-around`}
+              className={`${convite.title === 'Convite interativo animado' ? 'w-[50%] gap-4' : 'w-[50%]'} items-center flex flex-col justify-around`}
             >
               {convite.subtitles.map((sub: string, i: number) => (
                 <li
