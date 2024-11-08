@@ -84,7 +84,7 @@ export const convitesData: ConvitesProps[] = [
       'Contém clip do tema(trecho do desenho/filme e etc... retirado do youtube).',
       'Tela única.',
     ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
+    info: 'Imagem ilustrativa. Criamos diversos temas.',
     img: false,
     button:
       'https://drive.google.com/file/d/1t53AiPz-iNb6x8Vy4GW6LR5Cl45mJO5R/view',
