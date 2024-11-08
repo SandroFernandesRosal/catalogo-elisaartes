@@ -49,6 +49,7 @@ export default function Faq() {
           </li>
         ))}
       </ul>
+      <div className=" w-full bg-[url(/bgbotton.png)] h-[100px] bg-bottom bg-repeat-x md:bg-contain"></div>
     </section>
   )
 }

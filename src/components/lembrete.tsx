@@ -42,13 +42,17 @@ export default function Lembrete() {
           </p>
           <div className="flex gap-3 my-1 mx-2">
             <Link
-              href={''}
+              href={
+                'https://drive.google.com/file/d/1muDtN18jg3Tu_yWu1zcuBASLZsfP9qnU/view?usp=sharing'
+              }
               className="p-1 text-center  flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
             >
               Ver modelo
             </Link>
             <Link
-              href={''}
+              href={
+                'https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para'
+              }
               className=":p-1 text-center flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
             >
               Fazer pedido

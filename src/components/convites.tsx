@@ -38,15 +38,15 @@ export default function Convites() {
             <span className="border-b-4 w-24 border-textdark text-3xl mb-5"></span>
           </div>
           <div
-            className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite infinito' || convite.title === 'Convite animado história' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap' : 'flex-nowrap'}`}
+            className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite interativo animado' || convite.title === 'Convite infinito' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap' : 'flex-nowrap'}`}
           >
             <div
-              className={`flex justify-center w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[500px] md:w-[80%] lg:max-w-[800px] mb-5'}`}
+              className={`flex justify-center w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[50%] flex-wrap md:w-[100%] lg:max-w-[800px] mb-5'}`}
             >
               {convite.img &&
                 convite.img.map((imgUrl: string) => (
                   <Image
-                    className={`${convite.title === 'Convite interativo animado' && 'w-[33%]'}`}
+                    className={`${convite.title === 'Convite interativo animado' && 'w-[309px]'}`}
                     key={imgUrl}
                     src={imgUrl}
                     alt={convite.title}
@@ -108,7 +108,7 @@ export default function Convites() {
               </p>
               <div className="flex gap-3 my-1 mx-2">
                 <Link
-                  href=""
+                  href={`https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para${convite.title}`}
                   className="p-1 text-center flex justify-center items-center px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
                 >
                   Ver modelo

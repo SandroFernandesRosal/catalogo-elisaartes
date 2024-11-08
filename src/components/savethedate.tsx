@@ -13,7 +13,7 @@ export default function Savethedate() {
         <span className="border-b-4 w-16  border-textdark  text-3xl mb-5"></span>
       </div>
 
-      <div className="flex flex-wrap justify-center md:justify-evenly w-full ">
+      <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse ">
         {' '}
         <div className="bg-white flex  justify-center mb-5 w-[60%] md:w-[50%]">
           <Image
@@ -48,13 +48,17 @@ export default function Savethedate() {
           </p>
           <div className="flex gap-3 my-1 mx-2">
             <Link
-              href={''}
+              href={
+                'https://drive.google.com/file/d/1KDmzf82LmzaRuycVqUunvjWb7tB-6zIo/view'
+              }
               className="p-1 text-center flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
             >
               Ver modelo
             </Link>
             <Link
-              href={''}
+              href={
+                'https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20parasavethedate'
+              }
               className=":p-1 text-center flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
             >
               Fazer pedido
