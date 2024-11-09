@@ -25,7 +25,7 @@ export default function Faq() {
   ]
 
   return (
-    <section className="z-10  flex flex-col items-center   py-5" id="faq">
+    <section className="z-10  flex flex-col items-center   pt-5" id="faq">
       <h1 className="text-5xl text-center font-Bad font-extrabold">
         Informações importantes
       </h1>
@@ -49,7 +49,7 @@ export default function Faq() {
           </li>
         ))}
       </ul>
-      <div className=" w-full bg-[url(/bgbotton.png)] h-[100px] bg-bottom bg-repeat-x md:bg-contain"></div>
+      <div className=" w-full bg-[url(/bgbottom.png)] h-[100px] bg-bottom bg-repeat-x md:bg-contain"></div>
     </section>
   )
 }

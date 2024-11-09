@@ -45,27 +45,29 @@ export default function Convites() {
             >
               {convite.img &&
                 convite.img.map((imgUrl: string) => (
-                  <Image
-                    className={`${convite.title === 'Convite interativo animado' && 'w-[50%] md:w-[33%]  max-w-[309px]'}`}
+                  <div
                     key={imgUrl}
-                    src={imgUrl}
-                    alt={convite.title}
-                    width={309}
-                    height={550}
-                    quality={100}
-                  />
+                    className={`relative w-full max-w-[309px] aspect-[309/550] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]  max-w-[309px] flex-wrap'} `}
+                  >
+                    <Image
+                      src={imgUrl}
+                      alt={convite.title}
+                      layout="fill"
+                      objectFit="contain"
+                      quality={100}
+                      className="rounded"
+                    />
+                  </div>
                 ))}
 
               {convite.video && (
                 <div
-                  className={`relative w-[100%]   max-w-[309px] ${convite.title === 'Convite interativo animado' && 'w-[50%] md:w-[33%]'}`}
+                  className={`relative w-full max-w-[309px] aspect-[309/550] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]'}`}
                 >
                   <video
                     ref={(el) => {
                       videoRefs.current[convite.id] = el
                     }}
-                    width="309"
-                    height="550"
                     preload="metadata"
                     className="w-full h-full"
                     controls={false}
@@ -84,7 +86,7 @@ export default function Convites() {
                   {!isPlaying[convite.id] && (
                     <button
                       onClick={() => handlePlayPause(convite.id)}
-                      className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white rounded-full justify-self-center self-center w-16 h-16 "
+                      className="absolute inset-0 self-center justify-self-center flex items-center justify-center bg-black bg-opacity-50 text-white rounded-full w-16 h-16"
                     >
                       <FaPlay className="w-8 h-8" />
                     </button>
@@ -94,11 +96,11 @@ export default function Convites() {
             </div>
 
             <ul
-              className={`${convite.title === 'Convite interativo animado' ? 'w-[50%] gap-2' : 'w-[50%]'} gap-2  items-center flex flex-col justify-around`}
+              className={`${convite.title === 'Convite interativo animado' ? 'w-[50%] gap-2' : 'w-[50%]'} gap-2 items-center flex flex-col justify-around`}
             >
               {convite.subtitles.map((sub: string, i: number) => (
                 <li
-                  className="flex  items-center gap-2 w-[90%] text-textlight md:w-[50%] bg-bgdark rounded-lg px-[2px] p-1"
+                  className="flex items-center gap-2 w-[90%] text-textlight md:w-[50%] bg-bgdark rounded-lg px-[2px] p-1"
                   key={i}
                 >
                   <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
