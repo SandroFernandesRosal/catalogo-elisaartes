@@ -98,7 +98,7 @@ export default function Convites() {
             >
               {convite.subtitles.map((sub: string, i: number) => (
                 <li
-                  className="flex  items-center gap-2 w-[90%] text-textlight md:w-[50%] bg-bgdark rounded-lg px-[2px]"
+                  className="flex  items-center gap-2 w-[90%] text-textlight md:w-[50%] bg-bgdark rounded-lg px-[2px] p-1"
                   key={i}
                 >
                   <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
@@ -112,12 +112,14 @@ export default function Convites() {
                 <Link
                   href={convite.button}
                   className="p-1 text-center flex justify-center items-center px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+                  target="_blank"
                 >
                   Ver modelo
                 </Link>
                 <Link
                   href={`https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para%20${convite.title}`}
                   className="p-1 text-center flex justify-center items-center px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+                  target="_blank"
                 >
                   Fazer pedido
                 </Link>

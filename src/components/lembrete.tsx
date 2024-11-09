@@ -24,7 +24,7 @@ export default function Lembrete() {
           />
         </div>
         <ul className=" w-[50%]  gap-2 items-center flex flex-col justify-around">
-          <li className=" w-[90%] text-textlight  md:w-[50%]  md:-w-[100] bg-bgdark rounded-lg px-[2px]">
+          <li className=" w-[90%] text-textlight  md:w-[50%]  md:-w-[100] bg-bgdark rounded-lg px-[2px] p-1">
             <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
             <span>
               {' '}
@@ -32,7 +32,7 @@ export default function Lembrete() {
             </span>
           </li>
 
-          <li className="w-[90%] text-sm text-textlight  md:w-[50%]  md:-w-[100] bg-bgdark rounded-lg px-[2px]">
+          <li className="w-[90%] text-sm text-textlight  md:w-[50%]  md:-w-[100] bg-bgdark rounded-lg px-[2px] p-1">
             <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
             <span>Obs: Desconto para quem fechar junto com o convite</span>
           </li>
@@ -46,6 +46,7 @@ export default function Lembrete() {
                 'https://drive.google.com/file/d/1muDtN18jg3Tu_yWu1zcuBASLZsfP9qnU/view?usp=sharing'
               }
               className="p-1 text-center  flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+              target="_blank"
             >
               Ver modelo
             </Link>
@@ -54,6 +55,7 @@ export default function Lembrete() {
                 'https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para'
               }
               className=":p-1 text-center flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+              target="_blank"
             >
               Fazer pedido
             </Link>

@@ -32,14 +32,14 @@ export default function Filtro() {
           />
         </div>
         <ul className="w-[50%] flex gap-2  items-center  flex-col justify-evenly">
-          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%] bg-bgdark rounded-lg px-[2px]">
+          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%] bg-bgdark rounded-lg px-[2px] p-1">
             <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
             <span>
               Filtro moldura personalizado no tema da festa + card QR code.
             </span>
           </li>
 
-          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%] bg-bgdark rounded-lg px-[2px]">
+          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%] bg-bgdark rounded-lg px-[2px] p-1">
             <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
             <span>Desconto para quem fechar junto com o convite.</span>
           </li>
@@ -51,6 +51,7 @@ export default function Filtro() {
             <Link
               href={'https://www.instagram.com/ar/834731952089590/'}
               className="p-1 text-center flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+              target="_blank"
             >
               Ver modelo
             </Link>
@@ -59,6 +60,7 @@ export default function Filtro() {
                 'https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20parafiltro'
               }
               className=":p-1 text-center flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+              target="_blank"
             >
               Fazer pedido
             </Link>
