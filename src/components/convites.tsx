@@ -47,22 +47,22 @@ export default function Convites() {
                 convite.img.map((imgUrl: string) => (
                   <div
                     key={imgUrl}
-                    className={`relative w-full max-w-[309px] aspect-[309/550] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]  max-w-[309px] flex-wrap'} `}
+                    className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]  max-w-[309px] flex-wrap'} `}
                   >
                     <Image
                       src={imgUrl}
                       alt={convite.title}
-                      layout="fill"
-                      objectFit="contain"
+                      width={309}
+                      height={510}
                       quality={100}
-                      className="rounded"
+                      className="object-fill"
                     />
                   </div>
                 ))}
 
               {convite.video && (
                 <div
-                  className={`relative w-full max-w-[309px] aspect-[309/550] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]'}`}
+                  className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]'}`}
                 >
                   <video
                     ref={(el) => {
@@ -129,7 +129,13 @@ export default function Convites() {
 
               <div className="md:flex hidden">
                 <div className="relative flex items-center justify-center">
-                  <Image src="/pronto.png" alt="" width={150} height={100} />
+                  <Image
+                    src="/pronto.png"
+                    alt=""
+                    width={150}
+                    height={100}
+                    className="w-auto h-auto"
+                  />
                   <span className="absolute bottom-6 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
                     {convite.priceone}
                   </span>

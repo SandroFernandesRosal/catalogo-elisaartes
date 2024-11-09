@@ -19,11 +19,12 @@ export default function Highlight() {
       <div className="z-20 mb-5">
         <Image
           src={perfil}
-          alt=""
-          width={400}
-          height={400}
+          alt="logo"
+          width={300}
+          height={300}
           quality={100}
-          className="w-[300px] lg:w-[400px]"
+          priority
+          className="max-w-[300px] lg:max-w-[300px]"
         />
       </div>
     </section>
