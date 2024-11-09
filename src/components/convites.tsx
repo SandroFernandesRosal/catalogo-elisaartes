@@ -84,7 +84,7 @@ export default function Convites() {
                   {!isPlaying[convite.id] && (
                     <button
                       onClick={() => handlePlayPause(convite.id)}
-                      className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white rounded-full p-4 justify-self-center self-center w-20 h-20 "
+                      className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white rounded-full justify-self-center self-center w-16 h-16 "
                     >
                       <FaPlay className="w-8 h-8" />
                     </button>
@@ -116,7 +116,7 @@ export default function Convites() {
                   Ver modelo
                 </Link>
                 <Link
-                  href={`https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para${convite.title}`}
+                  href={`https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para%20${convite.title}`}
                   className="p-1 text-center flex justify-center items-center px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
                 >
                   Fazer pedido
