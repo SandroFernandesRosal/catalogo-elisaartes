@@ -41,7 +41,7 @@ export default function Convites() {
             className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite interativo animado' || convite.title === 'Convite infinito' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap' : 'flex-nowrap'}`}
           >
             <div
-              className={`flex justify-center w-[50%] ${convite.title === 'Convite interativo animado' && 'w-[500px] flex-wrap md:w-[100%] lg:max-w-[800px] mb-5'}`}
+              className={`flex justify-center w-[50%] ${convite.title === 'Convite interativo animado' && ' flex-wrap md:w-[100%] lg:max-w-[800px] mb-5'}`}
             >
               {convite.img &&
                 convite.img.map((imgUrl: string) => (
@@ -127,15 +127,9 @@ export default function Convites() {
                 </Link>
               </div>
 
-              <div className="md:flex hidden">
+              <div className="md:flex hidden ">
                 <div className="relative flex items-center justify-center">
-                  <Image
-                    src="/pronto.png"
-                    alt=""
-                    width={150}
-                    height={100}
-                    className="w-auto h-auto"
-                  />
+                  <Image src="/pronto.png" alt="" width={150} height={150} />
                   <span className="absolute bottom-6 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
                     {convite.priceone}
                   </span>
@@ -145,7 +139,7 @@ export default function Convites() {
                     src="/personalizado.png"
                     alt=""
                     width={150}
-                    height={100}
+                    height={150}
                   />
                   <span className="absolute bottom-6 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
                     {convite.pricetwo}
@@ -157,13 +151,13 @@ export default function Convites() {
 
           <div className="flex md:hidden">
             <div className="relative flex items-center justify-center">
-              <Image src="/pronto.png" alt="" width={150} height={100} />
+              <Image src="/pronto.png" alt="" width={150} height={150} />
               <span className="absolute bottom-9 text-xl ml-2 font-bold">
                 {convite.priceone}
               </span>
             </div>
-            <div className="relative flex flex-col items-center justify-center">
-              <Image src="/personalizado.png" alt="" width={150} height={100} />
+            <div className="relative flex items-center justify-center">
+              <Image src="/personalizado.png" alt="" width={150} height={150} />
               <span className="absolute bottom-9 text-xl ml-2 font-bold">
                 {convite.pricetwo}
               </span>
