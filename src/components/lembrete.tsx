@@ -4,7 +4,7 @@ import { IoIosHeart } from 'react-icons/io'
 
 export default function Lembrete() {
   return (
-    <section className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-14 bg-white flex flex-col items-center gap-4">
+    <section className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-16  bg-white flex flex-col items-center gap-4 mb-3 md:mb-7">
       <h1 className="text-5xl text-center font-Bad font-extrabold">Lembrete</h1>
       <div className="flex">
         <span className="border-b-4 w-12  border-primarypink  text-3xl mb-5"></span>
@@ -72,7 +72,7 @@ export default function Lembrete() {
         </ul>
       </div>
 
-      <div className=" w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-contain"></div>
+      <div className=" w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
     </section>
   )
 }

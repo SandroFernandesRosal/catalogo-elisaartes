@@ -28,9 +28,9 @@ export default function Convites() {
       {convitesData.map((convite: ConvitesProps) => (
         <div
           key={convite.id}
-          className="flex flex-col justify-center items-center bg-white gap-4 w-full pt-4 bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain"
+          className="flex flex-col justify-center items-center bg-white gap-4 w-full  bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain mb-3 md:mb-7"
         >
-          <h1 className="pt-10 text-5xl text-center font-Bad font-extrabold">
+          <h1 className="pt-16 text-5xl text-center font-Bad font-extrabold">
             {convite.title}
           </h1>
           <div className="flex">
@@ -169,7 +169,7 @@ export default function Convites() {
               </span>
             </div>
           </div>
-          <div className="w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-contain"></div>
+          <div className="w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
         </div>
       ))}
     </section>

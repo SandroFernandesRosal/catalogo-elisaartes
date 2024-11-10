@@ -25,8 +25,11 @@ export default function Faq() {
   ]
 
   return (
-    <section className="z-10  flex flex-col items-center   pt-5" id="faq">
-      <h1 className="text-5xl text-center font-Bad font-extrabold">
+    <section
+      className="z-10 bg-white  flex flex-col items-center   pt-5 bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain "
+      id="faq"
+    >
+      <h1 className="text-5xl text-center font-Bad font-extrabold pt-16">
         Informações importantes
       </h1>
       <div className="flex justify-center py-4">
@@ -37,7 +40,7 @@ export default function Faq() {
       <ul className="w-[80%] px-2 max-w-[400px] flex flex-col gap-3">
         {faqItems.map((item, index) => (
           <li key={index} onClick={() => handleOpen(index)} className="faq">
-            <h1 className="bg-white  h-20 items-center text-textdark rounded-md p-5 font-bold cursor-pointer flex justify-between">
+            <h1 className="bg-bgdark  h-20 items-center text-textdark rounded-md p-5 font-bold cursor-pointer flex justify-between">
               {`${index + 1} - ${item}`}
               {openIndex === index ? <ChevronUp /> : <ChevronDown />}
             </h1>
@@ -49,7 +52,7 @@ export default function Faq() {
           </li>
         ))}
       </ul>
-      <div className=" w-full bg-[url(/bgbottom.png)] h-[100px] bg-bottom bg-repeat-x md:bg-contain"></div>
+      <div className=" w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
     </section>
   )
 }
