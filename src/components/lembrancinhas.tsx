@@ -1,0 +1,77 @@
+import Image from 'next/image'
+import Link from 'next/link'
+import { IoIosHeart } from 'react-icons/io'
+import { LembrancinhasProps } from '@/data/types/lembrancinhas'
+import { LembrancinhasData } from '@/data/lembrancinhasData'
+import SliderImg from './slider-img'
+
+export default function Lembrancinhas() {
+  return (
+    <section className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-16  bg-white flex flex-col items-center gap-4 mb-3 md:mb-7">
+      {LembrancinhasData.map((lembrancinha: LembrancinhasProps) => (
+        <div
+          key={lembrancinha.id}
+          className=" flex flex-col w-full items-center gap-4 mb-3 md:mb-7"
+        >
+          <h1 className="text-5xl text-center font-Bad font-extrabold">
+            {lembrancinha.title}
+          </h1>
+          <div className="flex">
+            <span className="border-b-4 w-20  border-primarypink  text-3xl mb-5"></span>
+            <span className="border-b-4 w-20 border-textdark  text-3xl mb-5"></span>
+          </div>
+
+          <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse">
+            {' '}
+            <div className="bg-white  max-w-[309px] aspect-[309/510]   pt-10 mb-5 w-[50%]">
+              <SliderImg imgs={lembrancinha.img} />
+            </div>
+            <ul className=" w-[50%] max-w-[500px] gap-2 items-center flex flex-col justify-around">
+              <h1 className="text-xl font-bold">Fazemos artes para:</h1>
+              {lembrancinha.subtitles.map((sub: string, i: number) => (
+                <li
+                  key={i}
+                  className="flex items-center gap-2 w-[90%]  text-textlight bg-bgdark rounded-lg px-[2px] p-1"
+                >
+                  <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
+                  {sub}
+                </li>
+              ))}
+
+              <p className="my-2 text-black italic w-[90%]  lg:w-[100%]">
+                Imagem ilustrativa. Criamos qualquer tema.
+              </p>
+              <div className="flex gap-3 my-1 mx-2">
+                <Link
+                  href={
+                    'https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para'
+                  }
+                  className=":p-1 text-center flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+                  target="_blank"
+                >
+                  Fazer pedido
+                </Link>
+              </div>
+
+              <div className="flex">
+                <div className="relative flex flex-col items-center justify-center">
+                  <Image
+                    src="/personalizado.png"
+                    alt=""
+                    width={150}
+                    height={100}
+                  />
+                  <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+                    R$ 20,00
+                  </span>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
+      ))}
+
+      <div className=" w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
+    </section>
+  )
+}

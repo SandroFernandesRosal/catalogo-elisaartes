@@ -127,7 +127,7 @@ export default function Convites() {
                 </Link>
               </div>
 
-              <div className="md:flex hidden ">
+              <div className="md:flex hidden">
                 <div className="relative flex items-center justify-center">
                   <Image src="/pronto.png" alt="" width={150} height={150} />
                   <span className="absolute bottom-6 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">

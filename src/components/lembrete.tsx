@@ -11,20 +11,20 @@ export default function Lembrete() {
         <span className="border-b-4 w-12 border-textdark  text-3xl mb-5"></span>
       </div>
 
-      <div className="flex flex-wrap justify-center md:justify-evenly w-full ">
+      <div className="flex flex-wrap justify-center md:justify-evenly w-full px-2">
         {' '}
-        <div className="bg-white flex  justify-center mb-5 w-[60%] md:w-[50%]">
+        <div className="bg-white  max-w-[309px] aspect-[309/510]   pt-10 mb-5 w-[50%] ">
           <Image
             src={'/lembrete.png'}
             width={309}
             height={510}
             quality={100}
             alt=""
-            className="md:w-[309px] md:h-[510px]  border-[1px] border-zinc-300"
+            className="object-fill border-[1px] border-zinc-300"
           />
         </div>
-        <ul className=" w-[50%]  gap-2 items-center flex flex-col justify-around">
-          <li className=" w-[90%] text-textlight  md:w-[50%]  md:-w-[100] bg-bgdark rounded-lg px-[2px] p-1">
+        <ul className="gap-2 w-[50%] max-w-[500px] items-center flex flex-col justify-around">
+          <li className="flex items-center gap-2 w-[90%]  text-textlight  bg-bgdark rounded-lg px-[2px] p-1">
             <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
             <span>
               {' '}
@@ -32,12 +32,12 @@ export default function Lembrete() {
             </span>
           </li>
 
-          <li className="w-[90%] text-sm text-textlight  md:w-[50%]  md:-w-[100] bg-bgdark rounded-lg px-[2px] p-1">
+          <li className="flex items-center gap-2 w-[90%]   text-textlight   bg-bgdark rounded-lg px-[2px] p-1">
             <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
             <span>Obs: Desconto para quem fechar junto com o convite</span>
           </li>
 
-          <p className="my-2 text-black italic w-[90%]  md:w-[50%]">
+          <p className="my-2 text-black italic w-[90%]">
             Imagem ilustrativa. Criamos qualquer tema.
           </p>
           <div className="flex gap-3 my-1 mx-2">

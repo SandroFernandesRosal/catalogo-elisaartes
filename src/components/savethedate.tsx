@@ -13,37 +13,37 @@ export default function Savethedate() {
         <span className="border-b-4 w-16  border-textdark  text-3xl mb-5"></span>
       </div>
 
-      <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse ">
+      <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse px-2">
         {' '}
-        <div className="bg-white flex  justify-center mb-5 w-[60%] md:w-[50%]">
+        <div className="bg-white  justify-center mb-5  max-w-[500px] aspect-[500/500]   pt-10  w-[50%]">
           <Image
             src={'/savethedate.png'}
             width={500}
             height={500}
             quality={100}
             alt=""
-            className="md:w-[350px] md:h-[350px] lg:w-[500px] lg:h-[500px] border-[1px] border-zinc-300"
+            className="object-fill border-[1px] border-zinc-300"
           />
         </div>
-        <ul className="w-[50%] gap-2 items-center flex flex-col justify-around">
-          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%]  bg-bgdark rounded-lg px-[2px] p-1">
+        <ul className="w-[50%] max-w-[500px] gap-2 items-center flex flex-col justify-around">
+          <li className="flex items-center gap-2 w-[90%] text-textlight    bg-bgdark rounded-lg px-[2px] p-1">
             <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
             <span>
               É um aviso antecipado para que os convidados não marquem outros
               compromissos para aquele dia.
             </span>
           </li>
-          <li className="flex items-center gap-2 w-[90%] text-textlight  md:w-[50%]  md:-w-[100] bg-bgdark rounded-lg px-[2px] p-1">
+          <li className="flex items-center gap-2 w-[90%] text-textlight   md:-w-[100] bg-bgdark rounded-lg px-[2px] p-1">
             <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
             <span>É enviado antes do convite</span>
           </li>
 
-          <li className="flex items-center gap-2 w-[90%] text-sm text-textlight  md:w-[50%]  md:-w-[100]bg-bgdark  bg-bgdark rounded-lg px-[2px] p-1">
+          <li className="flex items-center gap-2 w-[90%] text-sm text-textlight    bg-bgdark rounded-lg px-[2px] p-1">
             <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
             <span>Obs: Desconto para quem fechar junto com o convite</span>
           </li>
 
-          <p className="my-2 text-black italic w-[90%]  md:w-[50%]">
+          <p className="my-2 text-black italic w-[90%]  ">
             Imagem ilustrativa. Criamos qualquer tema.
           </p>
           <div className="flex gap-3 my-1 mx-2">

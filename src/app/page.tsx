@@ -7,6 +7,7 @@ import Footer from '@/components/footer'
 import Filtro from '@/components/filtro'
 import Savethedate from '@/components/savethedate'
 import Lembrete from '@/components/lembrete'
+import Lembrancinhas from '@/components/lembrancinhas'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Filtro />
       <Savethedate />
       <Lembrete />
+      <Lembrancinhas />
       <Faq />
       <Footer />
     </main>

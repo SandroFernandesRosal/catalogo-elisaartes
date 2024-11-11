@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-slide>div{
+  margin: 0 6px;
+}
+
+.slick-prev:before, .slick-next:before, .slick-dots li.slick-active button:before, .slick-dots li button:before {
+  
+  color: #ef326c !important;
+  
+  
+}
+
+.slick-dots {
+  position: absolute !important;
+  top: -40px !important;
+}
+
+.slick-prev, .slick-next {
+  position: absolute !important;
+  top: -20px !important;
+  display: none !important;
+  
+}
+
 body::-webkit-scrollbar {
   width: 5px;
   
