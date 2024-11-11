@@ -1,3 +1,4 @@
+
 export default function Services() {
   return (
     <section className="pb-28 mb-3 md:mb-7 bg-white flex flex-col items-center gap-4 bg-[url(/bgtop.png)] bg-bottom bg-repeat-x  md:bg-contain">
@@ -20,7 +21,7 @@ export default function Services() {
         </li>
 
         <li className="bg-[url(/bgservice.png)] bg-cover w-44 h-44 flex flex-col justify-center items-center md:w-52 md:h-52 text-center">
-          <span className="px-5">Artes para lembrancinhas</span>
+          <span className="px-5">Artes digitais</span>
         </li>
 
         <li className="bg-[url(/bgservice.png)] bg-cover w-44 h-44 flex flex-col justify-center items-center md:w-52 md:h-52 text-center">
