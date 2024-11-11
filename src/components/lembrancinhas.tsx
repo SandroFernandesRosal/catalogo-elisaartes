@@ -38,7 +38,7 @@ export default function Lembrancinhas() {
                 </li>
               ))}
 
-              <p className="my-2 text-black italic w-[90%]  lg:w-[100%]">
+              <p className="my-2 text-black italic w-[90%]">
                 Imagem ilustrativa. Criamos qualquer tema.
               </p>
               <div className="flex gap-3 my-1 mx-2">
@@ -53,7 +53,7 @@ export default function Lembrancinhas() {
                 </Link>
               </div>
 
-              <div className="flex">
+              <div className="hidden md:flex justify-center">
                 <div className="relative flex flex-col items-center justify-center">
                   <Image
                     src="/personalizado.png"
@@ -67,6 +67,12 @@ export default function Lembrancinhas() {
                 </div>
               </div>
             </ul>
+            <div className="relative flex md:hidden flex-col items-center justify-center">
+              <Image src="/personalizado.png" alt="" width={150} height={100} />
+              <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+                R$ 20,00
+              </span>
+            </div>
           </div>
         </div>
       ))}

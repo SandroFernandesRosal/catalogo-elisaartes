@@ -61,7 +61,7 @@ export default function Lembrete() {
             </Link>
           </div>
 
-          <div className="flex">
+          <div className=" hidden md:flex">
             <div className="relative flex flex-col items-center justify-center">
               <Image src="/personalizado.png" alt="" width={150} height={100} />
               <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
@@ -70,6 +70,12 @@ export default function Lembrete() {
             </div>
           </div>
         </ul>
+        <div className="relative flex md:hidden flex-col items-center justify-center">
+          <Image src="/personalizado.png" alt="" width={150} height={100} />
+          <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+            R$ 20,00
+          </span>
+        </div>
       </div>
 
       <div className=" w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>

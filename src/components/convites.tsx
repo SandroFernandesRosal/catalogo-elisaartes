@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { IoIosHeart } from 'react-icons/io'
 import { useState, useRef } from 'react'
 import { FaPlay } from 'react-icons/fa'
+import SliderImg from './slider-img'
 
 export default function Convites() {
   const [isPlaying, setIsPlaying] = useState<{ [key: number]: boolean }>({})
@@ -38,31 +39,41 @@ export default function Convites() {
             <span className="border-b-4 w-24 border-textdark text-3xl mb-5"></span>
           </div>
           <div
-            className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite interativo animado' || convite.title === 'Convite infinito' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap' : 'flex-nowrap'}`}
+            className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite interativo animado' || convite.title === 'Convite infinito' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap items-around' : 'flex-nowrap'}`}
           >
             <div
-              className={`flex justify-center w-[50%] ${convite.title === 'Convite interativo animado' && ' flex-wrap md:w-[100%] lg:max-w-[800px] mb-5'}`}
+              className={`flex pt-10 justify-center w-[50%] ${convite.title === 'Convite interativo animado' && ' flex-wrap mb-5'}`}
             >
-              {convite.img &&
-                convite.img.map((imgUrl: string) => (
-                  <div
-                    key={imgUrl}
-                    className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]  max-w-[309px] flex-wrap'} `}
-                  >
-                    <Image
-                      src={imgUrl}
-                      alt={convite.title}
-                      width={309}
-                      height={510}
-                      quality={100}
-                      className="object-fill"
-                    />
+              {convite.title === 'Convite interativo animado' ? (
+                <>
+                  <div className="bg-white max-w-[309px] w-[100%] aspect-[309/510]">
+                    {convite.img && <SliderImg imgs={convite.img} />}
                   </div>
-                ))}
+                </>
+              ) : (
+                <>
+                  {convite.img &&
+                    convite.img.map((imgUrl: string) => (
+                      <div
+                        key={imgUrl}
+                        className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]  max-w-[309px] flex-wrap'} `}
+                      >
+                        <Image
+                          src={imgUrl}
+                          alt={convite.title}
+                          width={309}
+                          height={510}
+                          quality={100}
+                          className="object-fill"
+                        />
+                      </div>
+                    ))}
+                </>
+              )}
 
               {convite.video && (
                 <div
-                  className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]'}`}
+                  className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Convite interativo animado' && 'w-[50%]'}`}
                 >
                   <video
                     ref={(el) => {
@@ -96,11 +107,11 @@ export default function Convites() {
             </div>
 
             <ul
-              className={`${convite.title === 'Convite interativo animado' ? 'w-[50%] gap-2' : 'w-[50%]'} gap-2 items-center flex flex-col justify-around`}
+              className={`${convite.title === 'Convite interativo animado' ? 'w-[50%]' : 'w-[50%]'} gap-2 items-center flex flex-col justify-around`}
             >
               {convite.subtitles.map((sub: string, i: number) => (
                 <li
-                  className="flex items-center gap-2 w-[90%] text-textlight md:w-[50%] bg-bgdark rounded-lg px-[2px] p-1"
+                  className="flex items-center gap-2 w-[90%] text-textlight max-w-[500px] bg-bgdark rounded-lg px-[2px] p-1"
                   key={i}
                 >
                   <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
