@@ -10,6 +10,8 @@ export default function Faq() {
   }
 
   const faqItems: string[] = [
+    'Modelo pronto',
+    'Forma personalizado',
     'Forma de pagamento',
     'Prazo de entrega',
     'Confirmação do pedido',
@@ -17,6 +19,8 @@ export default function Faq() {
   ]
 
   const faqAnswers: string[] = [
+    'Modelos que já temos em nosso portfólio, para alterar somente as informações do aniversáriante sem mudanças na arte.',
+    'Modelo criado do zero, baseado em inspirações como decoração, arquivos, identidade visual e etc...',
     'Trabalhamos com pagamento via pix e link de pagamento com cartão de crédito(com acréscimo).',
     'De 1 a 4 dias úteis para o envio da arte para aprovação (sem contar o dia da aquisição).',
     'O pedido é confirmado mediante ao pagamento de 50% do valor total ou valor integral.',
