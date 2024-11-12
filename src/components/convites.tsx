@@ -138,6 +138,11 @@ export default function Convites() {
                     className="w-full h-full"
                     controls={false}
                     onClick={() => handlePlayPause(convite.id)}
+                    poster={
+                      typeof convite.poster === 'string'
+                        ? convite.poster
+                        : undefined
+                    }
                   >
                     <source src={convite.video} type="video/mp4" />
                     <track

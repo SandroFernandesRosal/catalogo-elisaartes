@@ -4,6 +4,7 @@ export interface ConvitesProps {
   subtitles: string[]
   info: string
   img: string[] | false
+  poster: string | false
   button: string
   priceone: string
   pricetwo: string
