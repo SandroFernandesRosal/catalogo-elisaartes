@@ -93,7 +93,7 @@ export default function Lembrancinhas() {
                   href={
                     'https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para'
                   }
-                  className=":p-1 text-center flex justify-center items-center  px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
+                  className="h-12 text-center flex justify-center items-center  px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
                   target="_blank"
                 >
                   Fazer pedido
@@ -109,7 +109,7 @@ export default function Lembrancinhas() {
                     height={100}
                   />
                   <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
-                    R$ 20,00
+                    {lembrancinha.price}
                   </span>
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function Lembrancinhas() {
             <div className="relative flex md:hidden flex-col items-center justify-center">
               <Image src="/personalizado.png" alt="" width={150} height={100} />
               <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
-                R$ 20,00
+                {lembrancinha.price}
               </span>
             </div>
           </div>

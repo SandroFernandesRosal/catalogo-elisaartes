@@ -3,6 +3,7 @@ export interface FiltroProps {
   title: string
   subtitles: string[]
   info: string
+  button: string
   img: string[]
   price: string
 }

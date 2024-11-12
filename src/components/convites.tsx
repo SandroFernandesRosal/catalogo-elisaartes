@@ -184,14 +184,14 @@ export default function Convites() {
               <div className="flex gap-3 my-1 mx-2">
                 <Link
                   href={convite.button}
-                  className="p-1 text-center flex justify-center items-center px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
+                  className="h-12 text-center flex justify-center items-center px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
                   target="_blank"
                 >
                   Ver modelo
                 </Link>
                 <Link
                   href={`https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para%20${convite.title}`}
-                  className="p-1 text-center flex justify-center items-center px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
+                  className="h-12 text-center flex justify-center items-center px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
                   target="_blank"
                 >
                   Fazer pedido
