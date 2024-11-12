@@ -78,7 +78,7 @@ export default function Convites() {
 
   return (
     <section
-      className="bg-bgdark flex flex-wrap justify-center items-center"
+      className="bg-bgpink flex flex-wrap justify-center items-center"
       ref={el}
     >
       {convitesData.map((convite: ConvitesProps) => (

@@ -50,13 +50,13 @@ export default function Filtro() {
 
   return (
     <section
-      className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-16 bg-white flex flex-col items-center gap-4 mb-3 md:mb-7 "
+      className="bg-bgpink flex flex-wrap justify-center items-center"
       ref={el}
     >
       {FiltroData.map((filtro: FiltroProps) => (
         <div
           key={filtro.id}
-          className=" flex flex-col w-full items-center gap-4 mb-3 md:mb-7 overflow-hidden"
+          className=" flex flex-col w-full items-center gap-4 overflow-hidden bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-16 bg-white "
         >
           <h1 className="text-5xl text-center font-Bad font-extrabold">
             {filtro.title}
