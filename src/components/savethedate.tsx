@@ -64,7 +64,7 @@ export default function Savethedate() {
             <span className="border-b-4 w-20 border-secondarypink  text-3xl mb-5"></span>
           </div>
 
-          <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse px- overflow-hidden">
+          <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse px- overflow-hidden px-2">
             {' '}
             <div
               className={`bg-white  max-w-[309px] aspect-[309/510]   pt-10 mb-5 w-[50%] project project-${save.id}`}
