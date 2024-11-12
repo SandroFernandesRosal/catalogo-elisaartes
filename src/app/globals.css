@@ -13,6 +13,10 @@
   
 }
 
+.project {
+  opacity: 0;
+}
+
 .slick-dots {
   position: absolute !important;
   top: -40px !important;

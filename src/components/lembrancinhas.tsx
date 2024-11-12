@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import { IoIosHeart } from 'react-icons/io'
@@ -5,9 +6,53 @@ import { LembrancinhasProps } from '@/data/types/lembrancinhas'
 import { LembrancinhasData } from '@/data/lembrancinhasData'
 import SliderImg from './slider-img'
 
+import { useLayoutEffect, useRef } from 'react'
+
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
 export default function Lembrancinhas() {
+  const el = useRef<HTMLUListElement | null>(null)
+  const tl = useRef<gsap.core.Timeline | null>(null)
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+    gsap.context(() => {
+      LembrancinhasData.forEach((project) => {
+        tl.current = gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: `.project-${project.id}`,
+              scrub: true,
+              markers: false,
+              start: 'top 100%',
+              end: 'bottom 100%',
+            },
+          })
+          .fromTo(
+            `.project-${project.id}`,
+            {
+              opacity: 0,
+              rotate: 100,
+            },
+            {
+              opacity: 1,
+              rotate: 0,
+            },
+          )
+      })
+    }, el)
+
+    return () => {
+      gsap.killTweensOf('.project')
+    }
+  }, [])
+
   return (
-    <section className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-16  bg-white flex flex-col items-center gap-4 mb-3 md:mb-7">
+    <section
+      ref={el}
+      className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-16  bg-white flex flex-col items-center gap-4 mb-3 md:mb-7"
+    >
       {LembrancinhasData.map((lembrancinha: LembrancinhasProps) => (
         <div
           key={lembrancinha.id}
@@ -21,9 +66,11 @@ export default function Lembrancinhas() {
             <span className="border-b-4 w-20 border-textdark  text-3xl mb-5"></span>
           </div>
 
-          <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse">
+          <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse overflow-hidden">
             {' '}
-            <div className="bg-white  max-w-[309px] aspect-[309/510]   pt-10 mb-5 w-[50%]">
+            <div
+              className={`bg-white  max-w-[309px] aspect-[309/510]   pt-10 mb-5 w-[50%] project project-${lembrancinha.id}`}
+            >
               <SliderImg imgs={lembrancinha.img} />
             </div>
             <ul className=" w-[50%] max-w-[500px] gap-2 items-center flex flex-col justify-around">

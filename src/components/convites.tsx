@@ -4,9 +4,12 @@ import { convitesData } from '@/data/convitesData'
 import Image from 'next/image'
 import Link from 'next/link'
 import { IoIosHeart } from 'react-icons/io'
-import { useState, useRef } from 'react'
+import { useState, useRef, useLayoutEffect } from 'react'
 import { FaPlay } from 'react-icons/fa'
 import SliderImg from './slider-img'
+
+import { gsap } from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 export default function Convites() {
   const [isPlaying, setIsPlaying] = useState<{ [key: number]: boolean }>({})
@@ -24,12 +27,64 @@ export default function Convites() {
     }
   }
 
+  const el = useRef<HTMLUListElement | null>(null)
+  const tl = useRef<gsap.core.Timeline | null>(null)
+
+  useLayoutEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
+
+    // Lista de títulos que devem girar da esquerda
+    const rotateLeftTitles = [
+      'Convite tradicional',
+      'Convite interativo 3 botões',
+      'Convite animado clip',
+      'Convite animado história',
+    ]
+
+    gsap.context(() => {
+      convitesData.forEach((project) => {
+        const initialRotate = rotateLeftTitles.includes(project.title)
+          ? -100
+          : 100
+
+        tl.current = gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: `.project-${project.id}`,
+              scrub: true,
+              markers: false,
+              start: 'top 100%',
+              end: 'bottom 100%',
+            },
+          })
+          .fromTo(
+            `.project-${project.id}`,
+            {
+              opacity: 0,
+              rotate: initialRotate,
+            },
+            {
+              opacity: 1,
+              rotate: 0,
+            },
+          )
+      })
+    }, el)
+
+    return () => {
+      gsap.killTweensOf('.project')
+    }
+  }, [])
+
   return (
-    <section className="bg-bgdark flex flex-wrap justify-center items-center">
+    <section
+      className="bg-bgdark flex flex-wrap justify-center items-center"
+      ref={el}
+    >
       {convitesData.map((convite: ConvitesProps) => (
         <div
           key={convite.id}
-          className="flex flex-col justify-center items-center bg-white gap-4 w-full  bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain mb-3 md:mb-7"
+          className={`flex flex-col justify-center items-center bg-white gap-4 w-full  bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain mb-3 md:mb-7 `}
         >
           <h1 className="pt-16 text-5xl text-center font-Bad font-extrabold">
             {convite.title}
@@ -39,10 +94,10 @@ export default function Convites() {
             <span className="border-b-4 w-24 border-textdark text-3xl mb-5"></span>
           </div>
           <div
-            className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite interativo animado' || convite.title === 'Convite infinito' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap items-around' : 'flex-nowrap'}`}
+            className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite interativo animado' || convite.title === 'Convite infinito' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap items-around' : 'flex-nowrap'} overflow-hidden`}
           >
             <div
-              className={`flex pt-10 justify-center w-[50%] ${convite.title === 'Convite interativo animado' && ' flex-wrap mb-5'}`}
+              className={`flex pt-10 justify-center w-[50%] ${convite.title === 'Convite interativo animado' && ' flex-wrap mb-5'} project project-${convite.id}`}
             >
               {convite.title === 'Convite interativo animado' ? (
                 <>
