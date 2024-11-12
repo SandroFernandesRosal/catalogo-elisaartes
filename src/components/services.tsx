@@ -1,4 +1,3 @@
-
 export default function Services() {
   return (
     <section className="pb-28 mb-3 md:mb-7 bg-white flex flex-col items-center gap-4 bg-[url(/bgtop.png)] bg-bottom bg-repeat-x  md:bg-contain">
