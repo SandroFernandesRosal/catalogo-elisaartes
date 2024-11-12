@@ -106,7 +106,7 @@ export default function Lembrancinhas() {
                     src="/personalizado.png"
                     alt=""
                     width={150}
-                    height={100}
+                    height={150}
                   />
                   <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
                     {lembrancinha.price}
