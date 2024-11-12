@@ -26,7 +26,7 @@ const bad = Bad({
 
 export const metadata: Metadata = {
   title: 'Elisa Artes Digitais - Catalogo',
-  description: 'Catálogo de artes',
+  description: 'Catálogo de artes digitais',
 }
 
 export default function RootLayout({
