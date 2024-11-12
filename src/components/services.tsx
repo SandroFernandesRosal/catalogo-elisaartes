@@ -6,7 +6,7 @@ export default function Services() {
       </h1>
       <div className="flex">
         <span className="border-b-4 w-24  border-primarypink  text-3xl mb-5"></span>
-        <span className="border-b-4 w-24  border-textdark text-3xl mb-5"></span>
+        <span className="border-b-4 w-24  border-secondarypink text-3xl mb-5"></span>
       </div>
 
       <ul className="flex flex-wrap gap-4 px-2 justify-center text-xl md:text-2xl">

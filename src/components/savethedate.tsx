@@ -61,7 +61,7 @@ export default function Savethedate() {
           </h1>
           <div className="flex">
             <span className="border-b-4 w-20  border-primarypink  text-3xl mb-5"></span>
-            <span className="border-b-4 w-20 border-textdark  text-3xl mb-5"></span>
+            <span className="border-b-4 w-20 border-secondarypink  text-3xl mb-5"></span>
           </div>
 
           <div className="flex flex-wrap justify-center md:justify-evenly w-full flex-row-reverse px- overflow-hidden">
@@ -82,9 +82,9 @@ export default function Savethedate() {
               {save.subtitles.map((sub: string, i: number) => (
                 <li
                   key={i}
-                  className="flex items-center gap-2 w-[90%]  text-textlight bg-bgdark rounded-lg px-[2px] p-1"
+                  className="flex items-center gap-2 w-[90%]  text-textlight bg-bgpink rounded-lg px-[2px] p-1"
                 >
-                  <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
+                  <IoIosHeart className="text-secondarypink min-w-[20px] justify-start" />
                   {sub}
                 </li>
               ))}
@@ -95,7 +95,7 @@ export default function Savethedate() {
               <div className="flex gap-3 my-1 mx-2">
                 <Link
                   href={save.button}
-                  className="p-1 text-center flex justify-center items-center px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+                  className="p-1 text-center flex justify-center items-center px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
                   target="_blank"
                 >
                   Ver modelo
@@ -104,7 +104,7 @@ export default function Savethedate() {
                   href={
                     'https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para'
                   }
-                  className=":p-1 text-center flex justify-center items-center  px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+                  className=":p-1 text-center flex justify-center items-center  px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
                   target="_blank"
                 >
                   Fazer pedido

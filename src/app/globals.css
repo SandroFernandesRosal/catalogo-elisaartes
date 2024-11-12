@@ -8,7 +8,7 @@
 
 .slick-prev:before, .slick-next:before, .slick-dots li.slick-active button:before, .slick-dots li button:before {
   
-  color: #ef326c !important;
+  color: #FF66C4 !important;
   
   
 }
@@ -36,7 +36,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   
-  background-color:  #ef326c;
+  background-color:  #FF66C4;
   border-radius: 10px;
   
 }
@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb {
 
 @layer base{
   body {
-      @apply  bg-bgdark  text-textdark font-Roboto
+      @apply  bg-bgpink  text-secondarypink font-Roboto
       
   }
 }

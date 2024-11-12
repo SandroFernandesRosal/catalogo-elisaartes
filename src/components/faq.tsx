@@ -38,13 +38,13 @@ export default function Faq() {
       </h1>
       <div className="flex justify-center py-4">
         <span className="border-b-4 w-24  border-primarypink  text-3xl mb-5"></span>
-        <span className="border-b-4 w-24  border-textdark  text-3xl mb-5"></span>
+        <span className="border-b-4 w-24  border-secondarypink  text-3xl mb-5"></span>
       </div>
 
       <ul className="w-[80%] px-2 max-w-[400px] flex flex-col gap-3">
         {faqItems.map((item, index) => (
           <li key={index} onClick={() => handleOpen(index)} className="faq">
-            <h1 className="bg-bgdark  h-20 items-center text-textdark rounded-md p-5 font-bold cursor-pointer flex justify-between">
+            <h1 className="bg-bgpink  h-20 items-center text-secondarypink rounded-md p-5 font-bold cursor-pointer flex justify-between">
               {`${index + 1} - ${item}`}
               {openIndex === index ? <ChevronUp /> : <ChevronDown />}
             </h1>

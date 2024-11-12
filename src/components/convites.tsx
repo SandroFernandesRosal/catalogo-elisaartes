@@ -91,7 +91,7 @@ export default function Convites() {
           </h1>
           <div className="flex">
             <span className="border-b-4 w-24 border-primarypink text-3xl mb-5"></span>
-            <span className="border-b-4 w-24 border-textdark text-3xl mb-5"></span>
+            <span className="border-b-4 w-24 border-secondarypink text-3xl mb-5"></span>
           </div>
           <div
             className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite interativo animado' || convite.title === 'Convite infinito' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap items-around' : 'flex-nowrap'} overflow-hidden`}
@@ -171,10 +171,10 @@ export default function Convites() {
             >
               {convite.subtitles.map((sub: string, i: number) => (
                 <li
-                  className="flex items-center gap-2 w-[90%] text-textlight max-w-[500px] bg-bgdark rounded-lg px-[2px] p-1"
+                  className="flex items-center gap-2 w-[90%] text-textlight max-w-[500px] bg-bgpink rounded-lg px-[2px] p-1"
                   key={i}
                 >
-                  <IoIosHeart className="text-textdark min-w-[20px] justify-start" />
+                  <IoIosHeart className="text-secondarypink min-w-[20px] justify-start" />
                   <span>{sub}</span>
                 </li>
               ))}
@@ -184,14 +184,14 @@ export default function Convites() {
               <div className="flex gap-3 my-1 mx-2">
                 <Link
                   href={convite.button}
-                  className="p-1 text-center flex justify-center items-center px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+                  className="p-1 text-center flex justify-center items-center px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
                   target="_blank"
                 >
                   Ver modelo
                 </Link>
                 <Link
                   href={`https://api.whatsapp.com/send?phone=5521935006953&text=Ol%C3%A1,%20gostaria%20de%20um%20or%C3%A7amento%20para%20${convite.title}`}
-                  className="p-1 text-center flex justify-center items-center px-2 bg-textdark text-white rounded-lg hover:bg-primarypink/90"
+                  className="p-1 text-center flex justify-center items-center px-2 bg-secondarypink text-white rounded-lg hover:bg-primarypink/90"
                   target="_blank"
                 >
                   Fazer pedido
