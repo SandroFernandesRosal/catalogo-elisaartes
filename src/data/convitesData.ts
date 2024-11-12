@@ -6,7 +6,7 @@ export const convitesData: ConvitesProps[] = [
     title: 'Convite tradicional',
     subtitles: [
       'Enviado em PNG(imagem).',
-      'Pode adicionar foto(com acréscimo de 3 reais).',
+      'Pode adicionar foto(com acréscimo de R$ 3,00).',
       'Pode ser impresso.',
       'Sem música ou animação.',
     ],
@@ -25,7 +25,7 @@ export const convitesData: ConvitesProps[] = [
     title: 'Convite interativo 2 botões',
     subtitles: [
       'Enviado em PDF.',
-      'Pode adicionar foto(acréscimo de 3 reais).',
+      'Pode adicionar foto(acréscimo de R$ 3,00).',
       'ícones clicáveis de confirmação de presença e localização.',
       'Sem música ou animações.',
     ],
@@ -44,7 +44,7 @@ export const convitesData: ConvitesProps[] = [
     title: 'Convite interativo 3 botões',
     subtitles: [
       'Enviado em PDF.',
-      'Pode adicionar foto(acréscimo de 3 reais).',
+      'Pode adicionar foto(acréscimo de R$ 3,00).',
       'Botões clicáveis de confirmação de presença e localização.',
       'Sugestão de presente.',
     ],
@@ -63,7 +63,7 @@ export const convitesData: ConvitesProps[] = [
     title: 'Convite infinito',
     subtitles: [
       'Enviado em PDF.',
-      'Pode adicionar foto(acréscimo de 3 reais).',
+      'Pode adicionar foto(acréscimo de R$ 3,00).',
       'Modelo de página longa.',
       'Sugestão de presente na própria página.',
       'Botões clicáveis de confirmação de presença e localização.',
@@ -83,7 +83,7 @@ export const convitesData: ConvitesProps[] = [
     title: 'Convite animado clip',
     subtitles: [
       'Enviado em vídeo MP4.',
-      'Pode adicionar foto(acréscimo de 3 reais).',
+      'Pode adicionar foto(acréscimo de R$ 3,00).',
       'Contém música.',
       'Contém clip do tema(trecho do desenho/filme e etc... retirado do youtube).',
       'Tela única.',
@@ -102,7 +102,7 @@ export const convitesData: ConvitesProps[] = [
     title: 'Convite animado gif',
     subtitles: [
       'Enviado em vídeo MP4.',
-      'Pode adicionar foto(acréscimo de 3 reais).',
+      'Pode adicionar foto(acréscimo de R$ 3,00).',
       'Contém música.',
       'Pequenas animações.',
       'Tela única.',
