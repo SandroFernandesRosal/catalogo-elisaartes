@@ -9,7 +9,9 @@
 
 ## Funcionalidades
 
-- Exibição das artes
+- Exibição das artes em fotos e vídeos
+- Exibição de imagem em carousel
+- Animações de scroll
 - Botão de fazer pedido pelo Whatsapp
 - Multiplataforma
 
