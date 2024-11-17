@@ -11,7 +11,7 @@ export default function Faq() {
 
   const faqItems: string[] = [
     'Modelo pronto',
-    'Forma personalizado',
+    'Modelo personalizado',
     'Forma de pagamento',
     'Prazo de entrega',
     'Confirmação do pedido',
