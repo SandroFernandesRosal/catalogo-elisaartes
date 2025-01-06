@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import {
   Roboto_Flex as Roboto,
   Lilita_One as Permanent,
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${pacifico.variable} ${bad.variable} `}
       >
+        <Analytics />
         <Header />
         {children}
       </body>
