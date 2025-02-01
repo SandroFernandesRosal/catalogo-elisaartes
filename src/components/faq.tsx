@@ -22,10 +22,10 @@ export default function Faq() {
     'Modelos que já temos em nosso portfólio, para alterar somente as informações do aniversáriante sem mudanças na arte.',
     'Modelo criado do zero, baseado em inspirações como decoração, arquivos, identidade visual e etc...',
     'Trabalhamos com pagamento via pix e link de pagamento com cartão de crédito(com acréscimo).',
-    'De 1 a 4 dias úteis para o envio da arte para aprovação (sem contar o dia da aquisição).',
-    'O pedido é confirmado mediante ao pagamento de 50% do valor total ou valor integral.',
+    'De 2 a 5 dias úteis para o envio da arte para aprovação (sem contar o dia da aquisição).',
+    'O pedido é confirmado mediante pagamento de 50% do valor total ou valor integral.',
 
-    'Em modelos prontos: o cliente poderá fazer até 3 alterações sem custo adicional, após será cobrado uma taxa de 5 reais para alteração. Em modelos personalizados: o cliente poderá fazer até 5 alterações sem custo adicional, após será cobrado uma taxa de 5 reais para alteração. O mesmo se o convite já estiver finalizado. ',
+    'Em modelos prontos: o cliente poderá fazer até 3 alterações sem custo adicional, após será cobrado uma taxa de R$5 reais para alteração. Em modelos personalizados: o cliente poderá fazer até 5 alterações sem custo adicional, após será cobrado uma taxa de R$5 reais para alteração. O mesmo se o convite já estiver finalizado. ',
   ]
 
   return (

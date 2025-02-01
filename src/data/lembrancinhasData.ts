@@ -3,7 +3,7 @@ import { LembrancinhasProps } from './types/lembrancinhas'
 export const LembrancinhasData: LembrancinhasProps[] = [
   {
     id: 1,
-    title: 'Artes  digitais',
+    title: 'Arte para lembrancinhas',
     subtitles: [
       'Caixinha acrílica.',
       'Baldinho de pipoca.',

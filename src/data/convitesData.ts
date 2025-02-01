@@ -26,7 +26,7 @@ export const convitesData: ConvitesProps[] = [
     subtitles: [
       'Enviado em PDF.',
       'Pode adicionar foto(acréscimo de R$ 3,00).',
-      'ícones clicáveis de confirmação de presença e localização.',
+      'Ícones clicáveis de confirmação de presença e localização.',
       'Sem música ou animações.',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',

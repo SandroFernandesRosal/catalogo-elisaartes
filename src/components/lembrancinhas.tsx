@@ -74,7 +74,7 @@ export default function Lembrancinhas() {
               <SliderImg imgs={lembrancinha.img} />
             </div>
             <ul className=" w-[50%] max-w-[500px] gap-2 items-center flex flex-col justify-around">
-              <h1 className="text-xl font-bold">Fazemos artes para:</h1>
+              <h1 className="text-xl font-bold pl-5">Fazemos artes para:</h1>
               {lembrancinha.subtitles.map((sub: string, i: number) => (
                 <li
                   key={i}
