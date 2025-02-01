@@ -114,7 +114,7 @@ export default function Savethedate() {
               <div className="hidden md:flex justify-center">
                 <div className="relative flex flex-col items-center justify-center">
                   <Image
-                    src="/personalizado.png"
+                    src="/personalizado.webp"
                     alt=""
                     width={150}
                     height={150}

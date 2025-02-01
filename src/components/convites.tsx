@@ -200,14 +200,14 @@ export default function Convites() {
 
               <div className="md:flex hidden">
                 <div className="relative flex items-center justify-center">
-                  <Image src="/pronto.png" alt="" width={150} height={150} />
+                  <Image src="/pronto.webp" alt="" width={150} height={150} />
                   <span className="absolute bottom-6 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
                     {convite.priceone}
                   </span>
                 </div>
                 <div className="relative flex flex-col items-center justify-center">
                   <Image
-                    src="/personalizado.png"
+                    src="/personalizado.webp"
                     alt=""
                     width={150}
                     height={150}
@@ -222,13 +222,18 @@ export default function Convites() {
 
           <div className="flex md:hidden">
             <div className="relative flex items-center justify-center">
-              <Image src="/pronto.png" alt="" width={150} height={150} />
+              <Image src="/pronto.webp" alt="" width={150} height={150} />
               <span className="absolute bottom-9 text-xl ml-2 font-bold">
                 {convite.priceone}
               </span>
             </div>
             <div className="relative flex items-center justify-center">
-              <Image src="/personalizado.png" alt="" width={150} height={150} />
+              <Image
+                src="/personalizado.webp"
+                alt=""
+                width={150}
+                height={150}
+              />
               <span className="absolute bottom-9 text-xl ml-2 font-bold">
                 {convite.pricetwo}
               </span>
