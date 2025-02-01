@@ -11,7 +11,7 @@ export const convitesData: ConvitesProps[] = [
       'Sem música ou animação.',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: ['/tradicional.png'],
+    img: ['/tradicional.webp'],
     poster: false,
     button:
       'https://drive.google.com/file/d/1eKg7Kx5GB30hKRzP3_1gaTk8ThP19zL-/view?usp=sharing ',
@@ -30,7 +30,7 @@ export const convitesData: ConvitesProps[] = [
       'Sem música ou animações.',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: ['/interativo2.png'],
+    img: ['/interativo2.webp'],
     poster: false,
     button:
       'https://drive.google.com/file/d/1SPgZ25yda1qLsKg8PXHJfwbJ3FFHUWRc/view',
@@ -49,7 +49,7 @@ export const convitesData: ConvitesProps[] = [
       'Sugestão de presente.',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: ['/interativo3.png'],
+    img: ['/interativo3.webp'],
     poster: false,
     button:
       'https://drive.google.com/file/d/1GEkAfpMjifWucLGV0yt0SRwOVTmYOmuR/view',
@@ -70,7 +70,7 @@ export const convitesData: ConvitesProps[] = [
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: false,
-    poster: '/posterinfinito.png',
+    poster: '/posterinfinito.webp',
     button:
       'https://drive.google.com/file/d/17GBdWFEZ0S3flcRy-88oT2ZpiimTMlur/view',
     priceone: 'R$ 40,00 ',
@@ -90,7 +90,7 @@ export const convitesData: ConvitesProps[] = [
     ],
     info: 'Imagem ilustrativa. Criamos diversos temas.',
     img: false,
-    poster: '/posteranimadoclip.png',
+    poster: '/posteranimadoclip.webp',
     button:
       'https://drive.google.com/file/d/1t53AiPz-iNb6x8Vy4GW6LR5Cl45mJO5R/view',
     priceone: 'R$ 25,00 ',
@@ -109,7 +109,7 @@ export const convitesData: ConvitesProps[] = [
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: false,
-    poster: '/posteranimadogif.png',
+    poster: '/posteranimadogif.webp',
     button:
       'https://drive.google.com/file/d/16oA2p0OteNe6yE4SMwbd2Kf0nc1MKjbT/view',
     priceone: 'R$ 25,00 ',
@@ -126,7 +126,7 @@ export const convitesData: ConvitesProps[] = [
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: false,
-    poster: '/posteranimadohistoria.png',
+    poster: '/posteranimadohistoria.webp',
     button:
       'https://drive.google.com/file/d/1Pdxa_N3r1PlSqEWHYRtTxnFRD0mFj_Wh/view',
     priceone: 'R$ 35,00 ',
@@ -144,8 +144,8 @@ export const convitesData: ConvitesProps[] = [
       'É possível ser adicionado foto.',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: ['/interativoanimado2.png', '/interativoanimado1.png'],
-    poster: '/posteranimadohistoria.png',
+    img: ['/interativoanimado2.webp', '/interativoanimado1.webp'],
+    poster: '/posteranimadohistoria.webp',
     button:
       'https://drive.google.com/file/d/16cLdnNgm1wvIy4ahvOLHtDyIGJeK2yeI/view',
     priceone: 'R$ 60,00 ',

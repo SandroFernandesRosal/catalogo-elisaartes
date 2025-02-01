@@ -10,7 +10,7 @@ export const SavethedateData: SavethedateProps[] = [
       'Obs: Desconto para quem fechar junto com o convite',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: '/savethedate.png',
+    img: '/savethedate.webp',
     button:
       'https://drive.google.com/file/d/1KDmzf82LmzaRuycVqUunvjWb7tB-6zIo/view',
     price: 'R$ 20,00 ',

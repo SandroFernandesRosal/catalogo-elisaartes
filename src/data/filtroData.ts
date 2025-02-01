@@ -10,7 +10,7 @@ export const FiltroData: FiltroProps[] = [
     ],
     button: 'https://www.instagram.com/ar/834731952089590/',
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: ['/suavez.png', '/qrcodesuavez.png'],
+    img: ['/suavez.webp', '/qrcodesuavez.webp'],
     price: 'R$ 35,00 ',
   },
 ]

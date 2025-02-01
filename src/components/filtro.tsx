@@ -50,13 +50,13 @@ export default function Filtro() {
 
   return (
     <section
-      className="bg-bgpink flex flex-wrap justify-center items-center"
+      className="bg-bgpink flex flex-wrap justify-center items-center mb-3 md:mb-7"
       ref={el}
     >
       {FiltroData.map((filtro: FiltroProps) => (
         <div
           key={filtro.id}
-          className=" flex flex-col w-full items-center gap-4 overflow-hidden bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-16 bg-white "
+          className=" flex flex-col w-full items-center gap-4 overflow-hidden bg-[url(/bgbottom.webp)] bg-top bg-repeat-x md:bg-contain pt-16 bg-white "
         >
           <h1 className="text-5xl text-center font-Bad font-extrabold">
             {filtro.title}
@@ -130,7 +130,7 @@ export default function Filtro() {
         </div>
       ))}
 
-      <div className=" w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
+      <div className=" w-full bg-[url(/bgtop.webp)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
     </section>
   )
 }

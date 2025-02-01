@@ -9,7 +9,7 @@ export const LembreteData: LembreteProps[] = [
       'Obs: Desconto para quem fechar junto com o convite',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: '/lembrete.png',
+    img: '/lembrete.webp',
     button:
       'https://drive.google.com/file/d/1muDtN18jg3Tu_yWu1zcuBASLZsfP9qnU/view?usp=sharing',
     price: 'R$ 20,00 ',

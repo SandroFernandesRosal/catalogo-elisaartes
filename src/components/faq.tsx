@@ -30,7 +30,7 @@ export default function Faq() {
 
   return (
     <section
-      className="z-10 bg-white  flex flex-col items-center   pt-5 bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain "
+      className="z-10 bg-white  flex flex-col items-center   pt-5 bg-[url(/bgbottom.webp)] bg-top bg-repeat-x md:bg-contain "
       id="faq"
     >
       <h1 className="text-5xl text-center font-Bad font-extrabold pt-16">

@@ -49,7 +49,7 @@ export default function Lembrete() {
   return (
     <section
       ref={el}
-      className="bg-[url(/bgbottom.png)] bg-top bg-repeat-x md:bg-contain pt-16  bg-white flex flex-col items-center gap-4 mb-3 md:mb-7"
+      className="bg-[url(/bgbottom.webp)] bg-top bg-repeat-x md:bg-contain pt-16  bg-white flex flex-col items-center gap-4 mb-3 md:mb-7"
     >
       {LembreteData.map((lembrete: LembreteProps) => (
         <div
@@ -135,7 +135,7 @@ export default function Lembrete() {
         </div>
       ))}
 
-      <div className=" w-full bg-[url(/bgtop.png)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
+      <div className=" w-full bg-[url(/bgtop.webp)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
     </section>
   )
 }
