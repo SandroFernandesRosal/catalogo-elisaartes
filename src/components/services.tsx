@@ -15,12 +15,12 @@ export default function Services() {
           <span className="text-sm">(adulto e infantil)</span>
         </li>
 
-        <li className=" bg-[url(/bgservice.png)] bg-cover w-44 h-44 flex flex-col justify-center items-center md:w-52 md:h-52 text-center">
-          <span>Filtro para instagram</span>
+        <li className=" bg-[url(/bgservice.png)] bg-cover w-44 h-44 flex flex-col px-10 justify-center items-center md:w-52 md:h-52 text-center">
+          <span>Moldura Sua vez</span>
         </li>
 
         <li className="bg-[url(/bgservice.png)] bg-cover w-44 h-44 flex flex-col justify-center items-center md:w-52 md:h-52 text-center">
-          <span className="px-5">Artes digitais</span>
+          <span className="px-5">Arte para lembrancinhas</span>
         </li>
 
         <li className="bg-[url(/bgservice.png)] bg-cover w-44 h-44 flex flex-col justify-center items-center md:w-52 md:h-52 text-center">
