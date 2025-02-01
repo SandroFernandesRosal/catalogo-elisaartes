@@ -3,9 +3,9 @@ import { FiltroProps } from './types/filtro'
 export const FiltroData: FiltroProps[] = [
   {
     id: 1,
-    title: 'Muldura Sua Vez',
+    title: 'Moldura Sua Vez',
     subtitles: [
-      'Muldura Sua Vez no tema da festa + plaquinha com QR code.',
+      'Moldura Sua Vez no tema da festa + plaquinha com QR code.',
       'Desconto para quem fechar junto com o convite.',
     ],
     button: 'https://www.instagram.com/ar/834731952089590/',
