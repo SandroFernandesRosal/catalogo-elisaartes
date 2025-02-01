@@ -20,7 +20,9 @@ export default function Services() {
         </li>
 
         <li className="bg-[url(/bgservice.png)] bg-cover w-44 h-44 flex flex-col justify-center items-center md:w-52 md:h-52 text-center">
-          <span className="px-5">Arte para lembrancinhas</span>
+          <span className="px-5">Arte para</span>
+          <span>lembranci</span>
+          <span>nhas</span>
         </li>
 
         <li className="bg-[url(/bgservice.png)] bg-cover w-44 h-44 flex flex-col justify-center items-center md:w-52 md:h-52 text-center">
