@@ -106,7 +106,15 @@ export default function Filtro() {
                 </Link>
               </div>
 
-              <div className="hidden md:flex justify-center">
+              <div className="hidden md:flex justify-center w-full gap-4">
+                <div className="hidden md:flex justify-center">
+                  <div className="relative flex flex-col items-center justify-center">
+                    <Image src="/pronto.webp" alt="" width={150} height={150} />
+                    <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+                      {filtro.priceTwo}
+                    </span>
+                  </div>
+                </div>
                 <div className="relative flex flex-col items-center justify-center">
                   <Image
                     src="/personalizado.webp"
@@ -120,16 +128,29 @@ export default function Filtro() {
                 </div>
               </div>
             </ul>
-            <div className="relative flex md:hidden flex-col items-center justify-center">
-              <Image
-                src="/personalizado.webp"
-                alt=""
-                width={150}
-                height={100}
-              />
-              <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
-                {filtro.price}
-              </span>
+            <div className="md:hidden flex justify-center w-full gap-4">
+              <div className="relative flex md:hidden flex-col items-center justify-center">
+                <Image
+                  src="/pronto.webp"
+                  alt="preço do pronto"
+                  width={150}
+                  height={100}
+                />
+                <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+                  {filtro.priceTwo}
+                </span>
+              </div>
+              <div className="relative flex md:hidden flex-col items-center justify-center">
+                <Image
+                  src="/personalizado.webp"
+                  alt="preço do personalizado"
+                  width={150}
+                  height={100}
+                />
+                <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+                  {filtro.price}
+                </span>
+              </div>
             </div>
           </div>
         </div>

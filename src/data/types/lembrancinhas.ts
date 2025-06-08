@@ -5,6 +5,7 @@ export interface LembrancinhasProps {
   info: string
   img: string[]
   price: string
+  priceTwo: string
 }
 
 export interface ConvitesArray {

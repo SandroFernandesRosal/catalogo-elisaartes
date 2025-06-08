@@ -6,6 +6,7 @@ export interface FiltroProps {
   button: string
   img: string[]
   price: string
+  priceTwo: string
 }
 
 export interface FiltroArray {

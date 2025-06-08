@@ -14,7 +14,7 @@ export default function Highlight() {
           Trabalhamos com modelos prontos e personalizados
         </span>
 
-        <ButtonPay name="Quero fazer um pedido" />
+        <ButtonPay name="Convesar no Whatsapp" />
       </div>
       <div className="z-20">
         <Image

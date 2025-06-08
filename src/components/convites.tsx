@@ -94,12 +94,12 @@ export default function Convites() {
             <span className="border-b-4 w-24 border-secondarypink text-3xl mb-5"></span>
           </div>
           <div
-            className={`flex ${convite.title === 'Convite interativo 2 botões' || convite.title === 'Convite interativo animado' || convite.title === 'Convite infinito' || convite.title === 'Convite animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Convite interativo animado' ? 'flex-wrap items-around' : 'flex-nowrap'} overflow-hidden`}
+            className={`flex ${convite.title === 'Modelo interativo 3 botões' || convite.title === 'Modelo interativo animado' || convite.title === 'Modelo animado gif' ? 'flex-row-reverse' : ''} justify-evenly w-full ${convite.title === 'Modelo interativo animado' ? 'flex-wrap items-around' : 'flex-nowrap'} overflow-hidden`}
           >
             <div
-              className={`flex pt-10 justify-center w-[50%] ${convite.title === 'Convite interativo animado' && ' flex-wrap mb-5'} project project-${convite.id}`}
+              className={`flex pt-10 justify-center w-[50%] ${convite.title === 'Modelo interativo animado' && ' flex-wrap mb-5'} project project-${convite.id}`}
             >
-              {convite.title === 'Convite interativo animado' ? (
+              {convite.title === 'Modelo interativo animado' ? (
                 <>
                   <div className="bg-white max-w-[309px] w-[100%] aspect-[309/510]">
                     {convite.img && <SliderImg imgs={convite.img} />}
@@ -111,7 +111,7 @@ export default function Convites() {
                     convite.img.map((imgUrl: string) => (
                       <div
                         key={imgUrl}
-                        className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Convite interativo animado' && 'w-[39%] md:w-[33%]  max-w-[309px] flex-wrap'} `}
+                        className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Modelo interativo animado' && 'w-[39%] md:w-[33%]  max-w-[309px] flex-wrap'} `}
                       >
                         <Image
                           src={imgUrl}
@@ -128,7 +128,7 @@ export default function Convites() {
 
               {convite.video && (
                 <div
-                  className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Convite interativo animado' && 'w-[50%]'}`}
+                  className={`relative w-full max-w-[309px] aspect-[309/510] ${convite.title === 'Modelo interativo animado' && 'w-[50%]'}`}
                 >
                   <video
                     ref={(el) => {
@@ -167,7 +167,7 @@ export default function Convites() {
             </div>
 
             <ul
-              className={`${convite.title === 'Convite interativo animado' ? 'w-[50%]' : 'w-[50%]'} gap-2 items-center flex flex-col justify-around`}
+              className={`${convite.title === 'Modelo interativo animado' ? 'w-[50%]' : 'w-[50%]'} gap-2 items-center flex flex-col justify-around`}
             >
               {convite.subtitles.map((sub: string, i: number) => (
                 <li
@@ -198,7 +198,7 @@ export default function Convites() {
                 </Link>
               </div>
 
-              <div className="md:flex hidden">
+              <div className="md:flex hidden justify-center w-full gap-4">
                 <div className="relative flex items-center justify-center">
                   <Image src="/pronto.webp" alt="" width={150} height={150} />
                   <span className="absolute bottom-6 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
@@ -220,7 +220,7 @@ export default function Convites() {
             </ul>
           </div>
 
-          <div className="flex md:hidden">
+          <div className="flex md:hidden  justify-center w-full gap-4">
             <div className="relative flex items-center justify-center">
               <Image src="/pronto.webp" alt="" width={150} height={150} />
               <span className="absolute bottom-9 text-xl ml-2 font-bold">
