@@ -10,7 +10,7 @@ export default function Faq() {
   }
 
   const faqItems: string[] = [
-    'Qual a diferença entre modelos prontos e personalizados?',
+    'Qual a diferença do modelo pronto para o personalizado?',
     'Qual a forma de pagamento?',
     'Qual o prazo de envio?',
     'Como fazer o pedido?',
@@ -18,7 +18,7 @@ export default function Faq() {
   ]
 
   const faqAnswers: string[] = [
-    'Modelos prontos são os que já temos a arte feita, para alterar somente as informações do aniversariante. Não alteramos o design; Modelos personalizados são modelos criados do zero, baseado em referências como decoração, lembrancinhas, identidade visual, etc.',
+    'Modelos prontos são os que já temos a arte feita, para alterar somente as informações do aniversariante. Não alteramos o design. Modelos personalizados são criados do zero, baseado em referências como decoração, lembrancinhas, identidade visual, etc.',
 
     'Trabalhamos com pagamento via pix e cartão por link de pagamento(com acréscimo).',
     'Modelo pronto: 2 dias úteis (sem contar com dia da aquisição). Modelo personalizado: 5 dias úteis, (sem contar com dia da aquisição).',
