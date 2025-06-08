@@ -17,13 +17,60 @@ export default function Faq() {
     'Alterações',
   ]
 
-  const faqAnswers: string[] = [
-    'Modelos prontos são os que já temos a arte feita, para alterar somente as informações do aniversariante. Não alteramos o design. Modelos personalizados são criados do zero, baseado em referências como decoração, lembrancinhas, identidade visual, etc.',
-
-    'Trabalhamos com pagamento via pix e cartão por link de pagamento(com acréscimo).',
-    'Modelo pronto: 2 dias úteis (sem contar com dia da aquisição). Modelo personalizado: 5 dias úteis, (sem contar com dia da aquisição).',
-    'Envie uma mensagem no whatsapp informando o tema e o modelo, fazemos em todos os modelos acima.',
-    'Em modelo pronto: Não alteramos o design, porém o cliente poderá fazer até 3 alterações sem custo adicional, como mudar o endereço, horário e etc. Em modelo personalizado: o cliente poderá fazer até 5 alterações sem custo adicional. Caso o cliente queira alterar algo mais após ter excedido o número de alterações, terá uma taxa de R$5,00. Se o pedido já estiver finalizado, terá uma taxa de R$5,00 para alteração.',
+  const faqAnswers: React.ReactNode[] = [
+    <>
+      <p className="mb-2">
+        <span className="font-bold">Modelos prontos</span> são os que já temos a
+        arte feita, para alterar somente as informações do aniversariante. Não
+        alteramos o design.
+      </p>
+      <p>
+        <span className="font-bold">Modelos personalizados</span> são criados do
+        zero, baseado em referências como decoração, lembrancinhas, identidade
+        visual, etc.
+      </p>
+    </>,
+    <>
+      <p>
+        Trabalhamos com pagamento via pix e cartão por link de pagamento (com
+        acréscimo).
+      </p>
+    </>,
+    <>
+      <p className="mb-2">
+        <span className="font-bold">Modelo pronto</span>: 2 dias úteis (sem
+        contar com o dia da aquisição).
+      </p>
+      <p>
+        <span className="font-bold">Modelo personalizado</span>: 5 dias úteis
+        (sem contar com o dia da aquisição).
+      </p>
+    </>,
+    <>
+      <p>
+        Envie uma mensagem no WhatsApp informando o tema e o modelo. Fazemos em
+        todos os modelos acima.
+      </p>
+    </>,
+    <>
+      <p className="mb-2">
+        <span className="font-bold">Em modelo pronto</span>: Não alteramos o
+        design, porém o cliente poderá fazer até 3 alterações sem custo
+        adicional, como mudar o endereço, horário e etc.
+      </p>
+      <p className="mb-2">
+        <span className="font-bold">Em modelo personalizado</span>: o cliente
+        poderá fazer até 5 alterações sem custo adicional.
+      </p>
+      <p className="mb-2">
+        Caso o cliente queira alterar algo mais após ter excedido o número de
+        alterações, terá uma taxa de R$5,00.
+      </p>
+      <p>
+        Se o pedido já estiver finalizado, terá uma taxa de R$5,00 para
+        alteração.
+      </p>
+    </>,
   ]
 
   return (
@@ -47,7 +94,7 @@ export default function Faq() {
               {openIndex === index ? <ChevronUp /> : <ChevronDown />}
             </h1>
             <div
-              className={`p-1 border-x-[1px] rounded-md bg-bglightsecundary dark:bg-bgdarksecundary border-b-[1px] border-none text-textlight transition ease-in-out duration-300 delay-150 ${openIndex === index ? 'flex' : 'hidden'}`}
+              className={`p-1 border-x-[1px] rounded-md bg-bglightsecundary dark:bg-bgdarksecundary border-b-[1px] border-none text-textlight transition ease-in-out duration-300 delay-150 ${openIndex === index ? 'flex flex-col ' : 'hidden'}`}
             >
               {faqAnswers[index]}
             </div>

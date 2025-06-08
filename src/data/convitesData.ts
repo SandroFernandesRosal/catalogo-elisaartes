@@ -25,7 +25,7 @@ export const convitesData: ConvitesProps[] = [
     subtitles: [
       'Enviado em PDF.',
       'Botões clicáveis de confirmação de presença (pelo whatsapp), localização e sugestão de presente.',
-      'Obs: Também fazemos confirmação de presença por formulário de Google (adicional de R$10,00).',
+      'Obs.: Também fazemos confirmação de presença por formulário do Google (adicional de R$10,00).',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: ['/interativo3.webp'],
