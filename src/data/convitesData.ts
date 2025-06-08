@@ -24,8 +24,8 @@ export const convitesData: ConvitesProps[] = [
     title: 'Modelo interativo 3 botões',
     subtitles: [
       'Enviado em PDF.',
-      'Botões clicáveis de confirmação de presença e localização.',
-      'Sugestão de presente.',
+      'Botões clicáveis de confirmação de presença (pelo whatsapp), localização e sugestão de presente.',
+      'Obs: Também fazemos confirmação de presença por formulário de Google (adicional de R$10,00).',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: ['/interativo3.webp'],
@@ -60,9 +60,9 @@ export const convitesData: ConvitesProps[] = [
     id: 4,
     title: 'Modelo animado gif',
     subtitles: [
-      'Enviado em vídeo MP4.',
-      'Contém música.',
-      'Pequenas animações.',
+      'Enviado em formato MP4 (vídeo).',
+      'Contém música e animações.',
+
       'Tela única.',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
@@ -77,7 +77,10 @@ export const convitesData: ConvitesProps[] = [
   {
     id: 5,
     title: 'Modelo animado história',
-    subtitles: ['Enviado em vídeo MP4.', 'Contém música.'],
+    subtitles: [
+      'Enviado em formato MP4 (vídeo).',
+      'Contém música e animações.',
+    ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: false,
     poster: '/posteranimadohistoria.webp',
@@ -94,7 +97,7 @@ export const convitesData: ConvitesProps[] = [
       'União do convite interativo com convite animado.',
       'Enviado em PDF.',
       'Ao tocar no envelope abre o convite em Vídeo.',
-      'Com música e animações.',
+      'Contém música, animações e os botoões clicaveis de confirmação de presença, localização e sugestão de presente.',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: ['/interativoanimado2.webp', '/interativoanimado1.webp'],
