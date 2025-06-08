@@ -31,7 +31,7 @@ export default function Header() {
         showHeader ? 'transform translate-y-0' : 'transform -translate-y-full'
       }`}
     >
-      <ButtonPay name="Quero fazer um pedido" />
+      <ButtonPay name="Convesar no Whatsapp" />
     </header>
   )
 }

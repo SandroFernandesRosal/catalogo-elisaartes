@@ -6,12 +6,12 @@ export const LembreteData: LembreteProps[] = [
     title: 'Lembrete',
     subtitles: [
       'É enviado alguns dias antes da festa para lembrar o convidado.',
-      'Obs: Desconto para quem fechar junto com o convite',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: '/lembrete.webp',
     button:
       'https://drive.google.com/file/d/1muDtN18jg3Tu_yWu1zcuBASLZsfP9qnU/view?usp=sharing',
     price: 'R$ 20,00 ',
+    priceTwo: 'R$ 10,00',
   },
 ]

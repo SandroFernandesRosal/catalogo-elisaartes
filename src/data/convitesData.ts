@@ -3,10 +3,9 @@ import { ConvitesProps } from './types/convites'
 export const convitesData: ConvitesProps[] = [
   {
     id: 1,
-    title: 'Convite tradicional',
+    title: 'Modelo tradicional',
     subtitles: [
       'Enviado em PNG(imagem).',
-      'Pode adicionar foto(com acréscimo de R$ 3,00).',
       'Pode ser impresso.',
       'Sem música ou animação.',
     ],
@@ -22,29 +21,9 @@ export const convitesData: ConvitesProps[] = [
 
   {
     id: 2,
-    title: 'Convite interativo 2 botões',
+    title: 'Modelo interativo 3 botões',
     subtitles: [
       'Enviado em PDF.',
-      'Pode adicionar foto(acréscimo de R$ 3,00).',
-      'Ícones clicáveis de confirmação de presença e localização.',
-      'Sem música ou animações.',
-    ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: ['/interativo2.webp'],
-    poster: false,
-    button:
-      'https://drive.google.com/file/d/1SPgZ25yda1qLsKg8PXHJfwbJ3FFHUWRc/view',
-    priceone: 'R$ 25,00 ',
-    pricetwo: 'R$ 35,00',
-    video: false,
-  },
-
-  {
-    id: 3,
-    title: 'Convite interativo 3 botões',
-    subtitles: [
-      'Enviado em PDF.',
-      'Pode adicionar foto(acréscimo de R$ 3,00).',
       'Botões clicáveis de confirmação de presença e localização.',
       'Sugestão de presente.',
     ],
@@ -59,11 +38,10 @@ export const convitesData: ConvitesProps[] = [
   },
 
   {
-    id: 4,
-    title: 'Convite infinito',
+    id: 3,
+    title: 'Modelo infinito',
     subtitles: [
       'Enviado em PDF.',
-      'Pode adicionar foto(acréscimo de R$ 3,00).',
       'Modelo de página longa.',
       'Sugestão de presente na própria página.',
       'Botões clicáveis de confirmação de presença e localização.',
@@ -79,30 +57,10 @@ export const convitesData: ConvitesProps[] = [
   },
 
   {
-    id: 5,
-    title: 'Convite animado clip',
+    id: 4,
+    title: 'Modelo animado gif',
     subtitles: [
       'Enviado em vídeo MP4.',
-      'Pode adicionar foto(acréscimo de R$ 3,00).',
-      'Contém música.',
-      'Contém clip do tema(trecho do desenho/filme e etc... retirado do youtube).',
-      'Tela única.',
-    ],
-    info: 'Imagem ilustrativa. Criamos diversos temas.',
-    img: false,
-    poster: '/posteranimadoclip.webp',
-    button:
-      'https://drive.google.com/file/d/1t53AiPz-iNb6x8Vy4GW6LR5Cl45mJO5R/view',
-    priceone: 'R$ 25,00 ',
-    pricetwo: 'R$ 35,00',
-    video: '/animadoclip.mp4',
-  },
-  {
-    id: 6,
-    title: 'Convite animado gif',
-    subtitles: [
-      'Enviado em vídeo MP4.',
-      'Pode adicionar foto(acréscimo de R$ 3,00).',
       'Contém música.',
       'Pequenas animações.',
       'Tela única.',
@@ -117,13 +75,9 @@ export const convitesData: ConvitesProps[] = [
     video: '/animadogif.mp4',
   },
   {
-    id: 7,
-    title: 'Convite animado história',
-    subtitles: [
-      'Enviado em vídeo MP4.',
-      'Pode adiconar até 3 fotos, sem custos adicionais.',
-      'Contém música.',
-    ],
+    id: 5,
+    title: 'Modelo animado história',
+    subtitles: ['Enviado em vídeo MP4.', 'Contém música.'],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: false,
     poster: '/posteranimadohistoria.webp',
@@ -134,14 +88,13 @@ export const convitesData: ConvitesProps[] = [
     video: '/animadohistoria.mp4',
   },
   {
-    id: 8,
-    title: 'Convite interativo animado',
+    id: 6,
+    title: 'Modelo interativo animado',
     subtitles: [
       'União do convite interativo com convite animado.',
       'Enviado em PDF.',
       'Ao tocar no envelope abre o convite em Vídeo.',
       'Com música e animações.',
-      'É possível ser adicionado foto.',
     ],
     info: 'Imagem ilustrativa. Criamos qualquer tema.',
     img: ['/interativoanimado2.webp', '/interativoanimado1.webp'],

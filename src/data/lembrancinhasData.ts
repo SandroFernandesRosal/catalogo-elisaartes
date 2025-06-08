@@ -22,5 +22,6 @@ export const LembrancinhasData: LembrancinhasProps[] = [
       '/marmitinha.webp',
     ],
     price: 'R$ 20,00 ',
+    priceTwo: 'R$ 10,00',
   },
 ]

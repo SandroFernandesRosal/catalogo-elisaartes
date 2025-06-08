@@ -6,6 +6,7 @@ export interface SavethedateProps {
   img: string
   button: string
   price: string
+  priceTwo: string
 }
 
 export interface ConvitesArray {
