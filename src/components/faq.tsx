@@ -42,7 +42,7 @@ export default function Faq() {
         contar com o dia da aquisição).
       </p>
       <p>
-        <span className="font-bold">Modelo personalizado</span>: 5 dias úteis
+        <span className="font-bold">Modelo personalizado</span>: 7 dias úteis
         (sem contar com o dia da aquisição).
       </p>
     </>,
