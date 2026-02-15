@@ -123,7 +123,6 @@ export default function Lembrete() {
                     {lembrete.priceTwo}
                   </span>
                 </div>
-               
               </div>
             </ul>
             <div className="md:hidden flex justify-center w-full gap-4">
@@ -138,7 +137,6 @@ export default function Lembrete() {
                   {lembrete.priceTwo}
                 </span>
               </div>
-             
             </div>
           </div>
         </div>

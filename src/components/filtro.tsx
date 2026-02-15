@@ -115,7 +115,6 @@ export default function Filtro() {
                     </span>
                   </div>
                 </div>
-              
               </div>
             </ul>
             <div className="md:hidden flex justify-center w-full gap-4">
@@ -130,7 +129,6 @@ export default function Filtro() {
                   {filtro.priceTwo}
                 </span>
               </div>
-            
             </div>
           </div>
         </div>
