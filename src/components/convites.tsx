@@ -201,21 +201,11 @@ export default function Convites() {
               <div className="md:flex hidden justify-center w-full gap-4">
                 <div className="relative flex items-center justify-center">
                   <Image src="/pronto.webp" alt="" width={150} height={150} />
-                  <span className="absolute bottom-6 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+                  <span className="absolute bottom-11 md:bottom-11 text-lg md:text-2xl ml-2 font-bold">
                     {convite.priceone}
                   </span>
                 </div>
-                <div className="relative flex flex-col items-center justify-center">
-                  <Image
-                    src="/personalizado.webp"
-                    alt=""
-                    width={150}
-                    height={150}
-                  />
-                  <span className="absolute bottom-6 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
-                    {convite.pricetwo}
-                  </span>
-                </div>
+               
               </div>
             </ul>
           </div>
@@ -223,21 +213,11 @@ export default function Convites() {
           <div className="flex md:hidden  justify-center w-full gap-4">
             <div className="relative flex items-center justify-center">
               <Image src="/pronto.webp" alt="" width={150} height={150} />
-              <span className="absolute bottom-9 text-xl ml-2 font-bold">
+              <span className="absolute bottom-11 text-xl ml-2 font-bold">
                 {convite.priceone}
               </span>
             </div>
-            <div className="relative flex items-center justify-center">
-              <Image
-                src="/personalizado.webp"
-                alt=""
-                width={150}
-                height={150}
-              />
-              <span className="absolute bottom-9 text-xl ml-2 font-bold">
-                {convite.pricetwo}
-              </span>
-            </div>
+          
           </div>
           <div className="w-full bg-[url(/bgtop.webp)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
         </div>

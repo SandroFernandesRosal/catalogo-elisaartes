@@ -14,7 +14,7 @@ export const convitesData: ConvitesProps[] = [
     poster: false,
     button:
       'https://drive.google.com/file/d/1eKg7Kx5GB30hKRzP3_1gaTk8ThP19zL-/view?usp=sharing ',
-    priceone: 'R$ 15,00 ',
+    priceone: 'R$ 20,00 ',
     pricetwo: 'R$ 25,00',
     video: false,
   },
@@ -32,50 +32,13 @@ export const convitesData: ConvitesProps[] = [
     poster: false,
     button:
       'https://drive.google.com/file/d/1GEkAfpMjifWucLGV0yt0SRwOVTmYOmuR/view',
-    priceone: 'R$ 30,00 ',
+    priceone: 'R$ 35,00 ',
     pricetwo: 'R$ 40,00',
     video: false,
   },
 
   {
     id: 3,
-    title: 'Modelo infinito',
-    subtitles: [
-      'Enviado em PDF.',
-      'Modelo de página longa.',
-      'Sugestão de presente na própria página.',
-      'Botões clicáveis de confirmação de presença e localização.',
-    ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: false,
-    poster: '/posterinfinito.webp',
-    button:
-      'https://drive.google.com/file/d/17GBdWFEZ0S3flcRy-88oT2ZpiimTMlur/view',
-    priceone: 'R$ 40,00 ',
-    pricetwo: 'R$ 50,00',
-    video: '/infinito.mp4',
-  },
-
-  {
-    id: 4,
-    title: 'Modelo animado gif',
-    subtitles: [
-      'Enviado em formato MP4 (vídeo).',
-      'Contém música e animações.',
-
-      'Tela única.',
-    ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
-    img: false,
-    poster: '/posteranimadogif.webp',
-    button:
-      'https://drive.google.com/file/d/16oA2p0OteNe6yE4SMwbd2Kf0nc1MKjbT/view',
-    priceone: 'R$ 25,00 ',
-    pricetwo: 'R$ 35,00',
-    video: '/animadogif.mp4',
-  },
-  {
-    id: 5,
     title: 'Modelo animado história',
     subtitles: [
       'Enviado em formato MP4 (vídeo).',
@@ -86,12 +49,12 @@ export const convitesData: ConvitesProps[] = [
     poster: '/posteranimadohistoria.webp',
     button:
       'https://drive.google.com/file/d/1Pdxa_N3r1PlSqEWHYRtTxnFRD0mFj_Wh/view',
-    priceone: 'R$ 35,00 ',
+    priceone: 'R$ 40,00 ',
     pricetwo: 'R$ 45,00',
     video: '/animadohistoria.mp4',
   },
   {
-    id: 6,
+    id: 4,
     title: 'Modelo interativo animado',
     subtitles: [
       'União do convite interativo com convite animado.',
@@ -104,7 +67,7 @@ export const convitesData: ConvitesProps[] = [
     poster: '/posteranimadohistoria.webp',
     button:
       'https://drive.google.com/file/d/16cLdnNgm1wvIy4ahvOLHtDyIGJeK2yeI/view',
-    priceone: 'R$ 60,00 ',
+    priceone: 'R$ 70,00 ',
     pricetwo: 'R$ 70,00',
     video: '/animadohistoria.mp4',
   },

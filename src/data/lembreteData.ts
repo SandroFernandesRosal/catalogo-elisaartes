@@ -12,6 +12,6 @@ export const LembreteData: LembreteProps[] = [
     button:
       'https://drive.google.com/file/d/1muDtN18jg3Tu_yWu1zcuBASLZsfP9qnU/view?usp=sharing',
     price: 'R$ 20,00 ',
-    priceTwo: 'R$ 10,00',
+    priceTwo: 'R$ 15,00',
   },
 ]
