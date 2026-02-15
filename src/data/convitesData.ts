@@ -49,7 +49,7 @@ export const convitesData: ConvitesProps[] = [
     poster: '/posteranimadohistoria.webp',
     button:
       'https://drive.google.com/file/d/1Pdxa_N3r1PlSqEWHYRtTxnFRD0mFj_Wh/view',
-    priceone: 'R$ 40,00 ',
+    priceone: 'R$ 45,00 ',
     pricetwo: 'R$ 45,00',
     video: '/animadohistoria.mp4',
   },
