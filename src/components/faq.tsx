@@ -10,7 +10,7 @@ export default function Faq() {
   }
 
   const faqItems: string[] = [
-    'Qual a diferença do modelo pronto para o personalizado?',
+    
     'Qual a forma de pagamento?',
     'Qual o prazo de envio?',
     'Como fazer o pedido?',
@@ -19,18 +19,6 @@ export default function Faq() {
 
   const faqAnswers: React.ReactNode[] = [
     <>
-      <p className="mb-2">
-        <span className="font-bold">Modelos prontos</span> são os que já temos a
-        arte feita, para alterar somente as informações do aniversariante. Não
-        alteramos o design.
-      </p>
-      <p>
-        <span className="font-bold">Modelos personalizados</span> são criados do
-        zero, baseado em referências como decoração, lembrancinhas, identidade
-        visual, etc.
-      </p>
-    </>,
-    <>
       <p>
         Trabalhamos com pagamento via pix e cartão por link de pagamento (com
         acréscimo).
@@ -38,13 +26,10 @@ export default function Faq() {
     </>,
     <>
       <p className="mb-2">
-        <span className="font-bold">Modelo pronto</span>: 2 dias úteis (sem
+        <span className="font-bold">Modelo pronto</span>: De 2 a 4 dias úteis (sem
         contar com o dia da aquisição).
       </p>
-      <p>
-        <span className="font-bold">Modelo personalizado</span>: 7 dias úteis
-        (sem contar com o dia da aquisição).
-      </p>
+     
     </>,
     <>
       <p>
@@ -54,22 +39,11 @@ export default function Faq() {
     </>,
     <>
       <p className="mb-2">
-        <span className="font-bold">Em modelo pronto</span>: Não alteramos o
-        design, porém o cliente poderá fazer até 3 alterações sem custo
-        adicional, como mudar o endereço, horário e etc.
+        O cliente terá direito a até três (3) alterações sem custo durante o processo de aprovação do convite.
+        A partir da quarta alteração, será cobrada uma taxa adicional de R$ 5,00 por modificação.
+        Caso o convite já esteja finalizado, qualquer solicitação de alteração posterior também estará sujeita à taxa de R$ 5,00 por ajuste.
       </p>
-      <p className="mb-2">
-        <span className="font-bold">Em modelo personalizado</span>: o cliente
-        poderá fazer até 5 alterações sem custo adicional.
-      </p>
-      <p className="mb-2">
-        Caso o cliente queira alterar algo mais após ter excedido o número de
-        alterações, terá uma taxa de R$5,00.
-      </p>
-      <p>
-        Se o pedido já estiver finalizado, terá uma taxa de R$5,00 para
-        alteração.
-      </p>
+      
     </>,
   ]
 

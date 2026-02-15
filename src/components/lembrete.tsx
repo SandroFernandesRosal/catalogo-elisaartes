@@ -119,21 +119,11 @@ export default function Lembrete() {
                     width={150}
                     height={100}
                   />
-                  <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+                  <span className="absolute bottom-11 md:bottom-11 text-lg md:text-2xl ml-2 font-bold">
                     {lembrete.priceTwo}
                   </span>
                 </div>
-                <div className="relative flex flex-col items-center justify-center">
-                  <Image
-                    src="/personalizado.webp"
-                    alt=""
-                    width={150}
-                    height={150}
-                  />
-                  <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
-                    {lembrete.price}
-                  </span>
-                </div>
+               
               </div>
             </ul>
             <div className="md:hidden flex justify-center w-full gap-4">
@@ -144,21 +134,11 @@ export default function Lembrete() {
                   width={150}
                   height={100}
                 />
-                <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
+                <span className="absolute bottom-11 md:bottom-11 text-lg md:text-2xl ml-2 font-bold">
                   {lembrete.priceTwo}
                 </span>
               </div>
-              <div className="relative flex md:hidden flex-col items-center justify-center">
-                <Image
-                  src="/personalizado.webp"
-                  alt="preço do personalizado"
-                  width={150}
-                  height={100}
-                />
-                <span className="absolute bottom-9 md:bottom-9 text-lg md:text-2xl ml-2 font-bold">
-                  {lembrete.price}
-                </span>
-              </div>
+             
             </div>
           </div>
         </div>

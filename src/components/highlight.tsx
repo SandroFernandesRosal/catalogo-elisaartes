@@ -7,12 +7,10 @@ export default function Highlight() {
   return (
     <section className="flex pt-10 md:pb-28 lg:pb-36 flex-wrap items-center w-full justify-center  md:justify-evenly   gap-4 bg-[url(/bg-highlight.webp)] bg-bottom bg-repeat-x  md:bg-contain">
       <div className="z-20  gap-2 flex flex-col ">
-        <h1 className="flex font-Bad font-bold justify-center text-5xl md:text-5xl lg:text-6xl text-textprimary text-center w-[100%] max-w-[500px] ">
+        <h1 className="flex font-Bad mb-4 font-bold justify-center text-5xl md:text-5xl lg:text-6xl text-textprimary text-center w-[100%] max-w-[500px] ">
           Elisa Artes Digitais
         </h1>
-        <span className="flex self-center w-[70%] text-xl text-center">
-          Trabalhamos com modelos prontos e personalizados
-        </span>
+
 
         <ButtonPay name="Convesar no Whatsapp" />
       </div>

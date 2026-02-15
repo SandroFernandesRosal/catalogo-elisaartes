@@ -13,6 +13,6 @@ export const SavethedateData: SavethedateProps[] = [
     button:
       'https://drive.google.com/file/d/1KDmzf82LmzaRuycVqUunvjWb7tB-6zIo/view',
     price: 'R$ 20,00 ',
-    priceTwo: 'R$ 10,00',
+    priceTwo: 'R$ 15,00',
   },
 ]
