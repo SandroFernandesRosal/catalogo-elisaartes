@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="flex justify-center items-center bg-bgdark h-20 gap-2">
       Desenvolvido por:
       <Link
-        href={'https://sandrofernandesdev.vercel.app/'}
+        href={'https://sandrodev.com.br'}
         target="blank"
         className="text-lg font-bold"
       >

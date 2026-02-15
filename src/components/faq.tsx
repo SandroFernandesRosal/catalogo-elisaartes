@@ -10,7 +10,6 @@ export default function Faq() {
   }
 
   const faqItems: string[] = [
-    
     'Qual a forma de pagamento?',
     'Qual o prazo de envio?',
     'Como fazer o pedido?',
@@ -26,10 +25,9 @@ export default function Faq() {
     </>,
     <>
       <p className="mb-2">
-        <span className="font-bold">Modelo pronto</span>: De 2 a 4 dias úteis (sem
-        contar com o dia da aquisição).
+        <span className="font-bold">Modelo pronto</span>: De 2 a 4 dias úteis
+        (sem contar com o dia da aquisição).
       </p>
-     
     </>,
     <>
       <p>
@@ -39,11 +37,12 @@ export default function Faq() {
     </>,
     <>
       <p className="mb-2">
-        O cliente terá direito a até três (3) alterações sem custo durante o processo de aprovação do convite.
-        A partir da quarta alteração, será cobrada uma taxa adicional de R$ 5,00 por modificação.
-        Caso o convite já esteja finalizado, qualquer solicitação de alteração posterior também estará sujeita à taxa de R$ 5,00 por ajuste.
+        O cliente terá direito a até três (3) alterações sem custo durante o
+        processo de aprovação do convite. A partir da quarta alteração, será
+        cobrada uma taxa adicional de R$ 5,00 por modificação. Caso o convite já
+        esteja finalizado, qualquer solicitação de alteração posterior também
+        estará sujeita à taxa de R$ 5,00 por ajuste.
       </p>
-      
     </>,
   ]
 

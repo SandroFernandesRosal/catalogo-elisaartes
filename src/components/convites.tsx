@@ -205,7 +205,6 @@ export default function Convites() {
                     {convite.priceone}
                   </span>
                 </div>
-               
               </div>
             </ul>
           </div>
@@ -217,7 +216,6 @@ export default function Convites() {
                 {convite.priceone}
               </span>
             </div>
-          
           </div>
           <div className="w-full bg-[url(/bgtop.webp)] h-[100px] bg-bottom bg-repeat-x md:bg-cover"></div>
         </div>

@@ -11,7 +11,6 @@ export default function Highlight() {
           Elisa Artes Digitais
         </h1>
 
-
         <ButtonPay name="Convesar no Whatsapp" />
       </div>
       <div className="z-20">

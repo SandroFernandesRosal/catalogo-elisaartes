@@ -112,7 +112,6 @@ export default function Lembrancinhas() {
                     {lembrancinha.priceTwo}
                   </span>
                 </div>
-
               </div>
             </ul>
             <div className="md:hidden flex justify-center w-full gap-4">
@@ -127,7 +126,6 @@ export default function Lembrancinhas() {
                   {lembrancinha.priceTwo}
                 </span>
               </div>
-             
             </div>
           </div>
         </div>
