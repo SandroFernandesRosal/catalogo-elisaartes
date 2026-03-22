@@ -8,7 +8,7 @@ export const SavethedateData: SavethedateProps[] = [
       'É um aviso antecipado para que os convidados não marquem outros compromissos para aquele dia.',
       'É enviado antes do convite',
     ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
+    info: 'Imagem ilustrativa. Temos diversos temas.',
     img: '/savethedate.webp',
     button:
       'https://drive.google.com/file/d/1KDmzf82LmzaRuycVqUunvjWb7tB-6zIo/view',

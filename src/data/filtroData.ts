@@ -9,7 +9,7 @@ export const FiltroData: FiltroProps[] = [
       'A plaquinha é enviada em PDF para impresão. Tamanho 10x14cm.',
     ],
     button: 'https://www.instagram.com/elisaartes.molduras',
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
+    info: 'Imagem ilustrativa. Temos diversos temas.',
     img: ['/suavez.webp', '/qrcodesuavez.webp'],
     price: 'R$ 30,00 ',
     priceTwo: 'R$ 30,00',

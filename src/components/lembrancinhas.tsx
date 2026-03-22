@@ -86,7 +86,7 @@ export default function Lembrancinhas() {
               ))}
 
               <p className="my-2 text-black italic w-[90%]">
-                Imagem ilustrativa. Criamos qualquer tema.
+                Imagem ilustrativa. Temos diversos temas.
               </p>
               <div className="flex gap-3 my-1 mx-2">
                 <Link
