@@ -9,7 +9,7 @@ export const convitesData: ConvitesProps[] = [
       'Pode ser impresso.',
       'Sem música ou animação.',
     ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
+    info: 'Imagem ilustrativa. Temos diversos temas.',
     img: ['/tradicional.webp'],
     poster: false,
     button:
@@ -27,7 +27,7 @@ export const convitesData: ConvitesProps[] = [
       'Botões clicáveis de confirmação de presença (pelo whatsapp), localização e sugestão de presente.',
       'Obs.: Também fazemos confirmação de presença por formulário do Google (adicional de R$10,00).',
     ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
+    info: 'Imagem ilustrativa. Temos diversos temas.',
     img: ['/interativo3.webp'],
     poster: false,
     button:
@@ -44,7 +44,7 @@ export const convitesData: ConvitesProps[] = [
       'Enviado em formato MP4 (vídeo).',
       'Contém música e animações.',
     ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
+    info: 'Imagem ilustrativa. Temos diversos temas.',
     img: false,
     poster: '/posteranimadohistoria.webp',
     button:
@@ -62,7 +62,7 @@ export const convitesData: ConvitesProps[] = [
       'Ao tocar no envelope abre o convite em Vídeo.',
       'Contém música, animações e os botoões clicaveis de confirmação de presença, localização e sugestão de presente.',
     ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
+    info: 'Imagem ilustrativa. Temos diversos temas.',
     img: ['/interativoanimado2.webp', '/interativoanimado1.webp'],
     poster: '/posteranimadohistoria.webp',
     button:

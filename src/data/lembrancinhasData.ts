@@ -13,7 +13,7 @@ export const LembrancinhasData: LembrancinhasProps[] = [
       'Tags redondos',
       'e etc...',
     ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
+    info: 'Imagem ilustrativa. Temos diversos temas.',
     img: [
       '/baldinho.webp',
       '/caixinha.webp',

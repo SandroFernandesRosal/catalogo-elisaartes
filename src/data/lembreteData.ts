@@ -7,7 +7,7 @@ export const LembreteData: LembreteProps[] = [
     subtitles: [
       'É enviado alguns dias antes da festa para lembrar o convidado.',
     ],
-    info: 'Imagem ilustrativa. Criamos qualquer tema.',
+    info: 'Imagem ilustrativa. Temos diversos temas.',
     img: '/lembrete.webp',
     button:
       'https://drive.google.com/file/d/1muDtN18jg3Tu_yWu1zcuBASLZsfP9qnU/view?usp=sharing',
