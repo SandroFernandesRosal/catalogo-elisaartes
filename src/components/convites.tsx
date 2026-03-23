@@ -35,10 +35,10 @@ export default function Convites() {
 
     // Lista de títulos que devem girar da esquerda
     const rotateLeftTitles = [
-      'Convite tradicional',
-      'Convite interativo 3 botões',
-      'Convite animado clip',
-      'Convite animado história',
+      'Modelo tradicional',
+      'Modelo interativo 3 botões',
+      'Modelo animado clip',
+      'Modelo animado história',
     ]
 
     gsap.context(() => {
