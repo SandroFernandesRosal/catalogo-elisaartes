@@ -60,7 +60,7 @@ export const convitesData: ConvitesProps[] = [
       'União do convite interativo com convite animado.',
       'Enviado em formato de site (Link).',
       'Ao tocar no envelope abre o convite em Vídeo.',
-      'Contém música, animações e os botoões clicaveis de confirmação de presença, localização e sugestão de presente.',
+      'Contém música, animações e os botões clicáveis de confirmação de presença, localização e sugestão de presente.',
     ],
     info: 'Imagem ilustrativa. Temos diversos temas.',
     img: ['/interativoanimado1.png', '/interativoanimado2.png'],
