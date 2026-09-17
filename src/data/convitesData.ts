@@ -66,7 +66,7 @@ export const convitesData: ConvitesProps[] = [
     img: ['/interativoanimado1.png', '/interativoanimado2.png'],
     poster: '/interativoanimado1.jpeg',
     button:
-      'https://convites.elisaartesdigitais.com.br/modelo-interativo-animado',
+      'https://convites.elisaartesdigitais.com.br/pedro-1-aninho-exemplo',
     priceone: 'R$ 70,00 ',
     pricetwo: 'R$ 70,00',
     video: '/animadohistoria.mp4',
