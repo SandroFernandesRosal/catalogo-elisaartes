@@ -55,7 +55,7 @@ export const convitesData: ConvitesProps[] = [
   },
   {
     id: 4,
-    title: 'Modelo interativo animado',
+    title: 'Modelo interativo animadoo',
     subtitles: [
       'União do convite interativo com convite animado.',
       'Enviado em formato de site (Link).',
